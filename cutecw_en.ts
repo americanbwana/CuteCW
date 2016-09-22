@@ -43,7 +43,8 @@
     <name>FrontPage</name>
     <message>
         <location filename="modes/FrontPage.cpp" line="17"/>
-        <source>&lt;font color=&quot;green&quot;&gt;Selecting a starting place from the buttons below&lt;/font&gt;</source>
+        <source>&lt;font color=&quot;green&quot;&gt;Select a starting place from the buttons below&lt;/font&gt;</source>
+        <oldsource>&lt;font color=&quot;green&quot;&gt;Selecting a starting place from the buttons below&lt;/font&gt;</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

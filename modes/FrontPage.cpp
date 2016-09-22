@@ -14,7 +14,7 @@ FrontPage::FrontPage(Morse *parent, Ui::MainWindow *ui)
 
 void FrontPage::switchToMode()
 {
-    m_ui->helpBar->setText(tr("<font color=\"green\">Selecting a starting place from the buttons below</font>"));
+    m_ui->helpBar->setText(tr("<font color=\"green\">Select a starting place from the buttons below</font>"));
 
     m_ui->letter->hide();
     m_ui->play->hide();
