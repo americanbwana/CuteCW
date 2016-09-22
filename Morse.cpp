@@ -266,6 +266,16 @@ QTime Morse::playIt(QChar c, bool addLeadInPause) {
         add(pause());  // allows audio device to kick in (otherwise distortion can occur)
     m_leadInPause = sequenceTime();
     add(c, false); // add the pause in maybePlaySequence so it can calculate the sequence end
+
+    /* https://github.com/hardaker/CuteCW/issues/12
+     * Add a letter pause twice so audio does not stop early (cutting of
+     * the last dit or dah).
+     * This is a workaround and we should probably just let the audio
+     * run a little longer.
+     */
+    add(m_letterPause);
+    add(m_letterPause);
+
     return maybePlaySequence(true);
 }
 
