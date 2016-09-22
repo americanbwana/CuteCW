@@ -57,7 +57,14 @@ void HighScores::showScores() {
 
 void HighScores::saveScores()
 {
-    QSettings settings("WS6Z", "qtcw");
+#ifdef PORTABLE_BUILD
+    QSettings settings(QDir::currentPath() + "/cutecw.cfg", QSettings::IniFormat);
+    qDebug() << "Using portable config from" << QDir::currentPath() << "/cutecw.cfg";
+#else
+    QSettings settings("WS6Z", "cutecw");
+    qDebug() << "Using native config";
+#endif
+
     QString savename("highscores/" + m_tableName);
     int count = 0;
 
@@ -77,7 +84,13 @@ void HighScores::saveScores()
 
 void HighScores::loadScores()
 {
-    QSettings settings("WS6Z", "qtcw");
+#ifdef PORTABLE_BUILD
+    QSettings settings(QDir::currentPath() + "/cutecw.cfg", QSettings::IniFormat);
+    qDebug() << "Using portable config from" << QDir::currentPath() << "/cutecw.cfg";
+#else
+    QSettings settings("WS6Z", "cutecw");
+    qDebug() << "Using native config";
+#endif
     QString savename("highscores/" + m_tableName);
 
     int size = settings.beginReadArray(savename);

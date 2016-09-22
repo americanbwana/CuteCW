@@ -4,6 +4,8 @@
 #include <QObject>
 #include <QtCore/QList>
 #include <QtCore/QPair>
+#include <QDir>
+#include <QDebug>
 
 class HighScores : public QObject
 {

@@ -23,7 +23,15 @@ HighScoresDialog::HighScoresDialog(const QString &tableName, QList<QPair<int,QSt
     QHBoxLayout *hbox = new QHBoxLayout();
 
     if (newSlot != -1) {
-        QSettings settings("WS6Z", "qtcw");
+
+#ifdef PORTABLE_BUILD
+        QSettings settings(QDir::currentPath() + "/cutecw.cfg", QSettings::IniFormat);
+        qDebug() << "Using portable config from" << QDir::currentPath() << "/cutecw.cfg";
+#else
+        QSettings settings("WS6Z", "cutecw");
+        qDebug() << "Using native config";
+#endif
+
         m_savedName = settings.value("highscoresdialog/defaultName").toString();
 
         QLabel *scoreName = new QLabel(tr("Your Name: "));
@@ -92,7 +100,13 @@ void HighScoresDialog::textChanged(QString text) {
 }
 
 void HighScoresDialog::saveDefaultName() {
-    QSettings settings("WS6Z", "qtcw");
+#ifdef PORTABLE_BUILD
+    QSettings settings(QDir::currentPath() + "/cutecw.cfg", QSettings::IniFormat);
+    qDebug() << "Using portable config from" << QDir::currentPath() << "/cutecw.cfg";
+#else
+    QSettings settings("WS6Z", "cutecw");
+    qDebug() << "Using native config";
+#endif
     settings.setValue("highscoresdialog/defaultName", m_savedName);
 }
 
