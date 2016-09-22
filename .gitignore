@@ -7,3 +7,8 @@ Makefile.Release
 cutecw.pro.user*
 cutecw.zip
 *.orig
+moc_*.cpp
+*.o
+cutecw
+qrc_cutecw.cpp
+ui_AboutDialog.h
