@@ -8,21 +8,21 @@ Cute CW: train yourself
   us out in ways not yet seen.  This is my effort to help decrease the
   pain in training your brain to understand Morse Code.
 
+* History
+  Cute CW was developed by WS6Z.
+  Then merged Qt5 branch to master and made a lot of modifications by Dashie.
+
 * Get it!
 
   You can download the source code or pre-built binaries from:
 
-    http://www.hamtools.org/qtcw/
+    TODO
 
-  You can also access the git repository, provided by githib, from:
+  You can also access the git repository, from:
 
-    http://www.github.com/hardaker/CuteCW/
+    https://dev.sigpipe.me/DashieHam/CuteCW
 
 * Further Information
-
-  More documentation can be found at:
-
-    http://www.hamtools.org/qtcw/
 
   The growing list of [[file:docs/CHANGES.org][CHANGES]] and the hopefully shrinking [[file:docs/TODO.org][TODO list]]
 
@@ -38,3 +38,4 @@ Cute CW: train yourself
   2. qmake
   3. make
   4. optionally: make install
+
