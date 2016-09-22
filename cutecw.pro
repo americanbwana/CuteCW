@@ -14,7 +14,7 @@ VERSION = 1.1
 # Activate this line if you want a portable build
 # This will makes the software to use a config in the
 # current "runtime" folder instead of system-wide one
-DEFINES += "PORTABLE_BUILD=TRUE"
+#DEFINES += "PORTABLE_BUILD=TRUE"
 
 RESOURCES = cutecw.qrc
 
