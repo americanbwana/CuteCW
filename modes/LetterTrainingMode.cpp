@@ -18,7 +18,7 @@ void LetterTrainingMode::switchToMode() {
     m_ui->play->show();
     setupTrainingWidgets();
     m_ui->changeSequence->show();
-    m_ui->helpBar->setText("<font color=\"green\">Type the letter you hear as accurately as possible within a half a second.</font>");
+    m_ui->helpBar->setText(tr("<font color=\"green\">Type the letter you hear as accurately as possible within a half a second.</font>"));
 
     setupSequences();
     setupWidgets(m_trainingSequence, true, "A\nc\nc\nu\nr\na\nc\ny");
@@ -99,8 +99,7 @@ void LetterTrainingMode::startNextTrainingKey() {
             m_lastKey = *letter;
             m_lastKeys.append(*letter);
             setSequence(m_trainingSequence, letterCount);
-            m_avewpmLabel->setText("All Percentage: " + QString().setNum(totalPercent/letterCount) + ", " +
-                                  *letter + ": NEW");
+            m_avewpmLabel->setText(tr("All percentage: %1, %2: NEW").arg(QString().setNum(totalPercent/letterCount)).arg(*letter));
             setWPMLabel(thisPercent);
             m_lastTimes.push_back(m_morse->playIt(*letter));
             updateGraphs();
@@ -139,8 +138,7 @@ void LetterTrainingMode::startNextTrainingKey() {
         totalPercent += (*aletter).second;
     }
 
-    m_avewpmLabel->setText("All Percentage: " + QString().setNum(totalPercent/letterCount) + ", " +
-                          *letter + ": NEW");
+    m_avewpmLabel->setText(tr("All percentage: %1, %2: NEW").arg(QString().setNum(totalPercent/letterCount)).arg(*letter));
     setSequence(m_trainingSequence, letterCount);
 
     setWPMLabel(totalPercent/letterCount);
@@ -186,9 +184,9 @@ void LetterTrainingMode::updateGraphs()
         m_progressBars[theLetter]->setGoalBarLevel(m_percentGoal);
         m_progressBars[theLetter]->setValue(getStat(theLetter)->getGoodPercentage(m_minimumTries));
         if (m_stats[theLetter]->getGoodPercentage() >= m_percentGoal) {
-            m_progressLabels[theLetter]->setText("<font color=\"red\">" + QString(theLetter.toUpper()) + "</font>");
+            m_progressLabels[theLetter]->setText(tr("<font color=\"red\">%1</font>").arg(QString(theLetter.toUpper())));
         } else {
-            m_progressLabels[theLetter]->setText("<font color=\"black\">" + QString(theLetter.toUpper()) + "</font>");
+            m_progressLabels[theLetter]->setText(tr("<font color=\"black\">%1</font>").arg(QString(theLetter.toUpper())));
         }
     }
     // qDebug() << "max graph WPM: " << fastestWPM;

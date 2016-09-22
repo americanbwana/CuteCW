@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr_FR">
+<TS version="2.0" language="fr_FR">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -199,6 +199,11 @@
 <context>
     <name>LetterTrainingMode</name>
     <message>
+        <location filename="modes/LetterTrainingMode.cpp" line="21"/>
+        <source>&lt;font color=&quot;green&quot;&gt;Type the letter you hear as accurately as possible within a half a second.&lt;/font&gt;</source>
+        <translation>&lt;font color=&quot;green&quot;&gt;Tapez la lettre que vous entendez, aussi précisement que possible, en moins d&apos;une demi-seconde.&lt;/font&gt;</translation>
+    </message>
+    <message>
         <location filename="modes/LetterTrainingMode.cpp" line="43"/>
         <source>&lt;p&gt;In this mode characters will be played for you. You will need to press the appropriate within a half-a-second.  Accuracy is more important than speed.In order to continue advancing in the character set you will need to achieve at least a 90% accuracy rate on the letters, with at least 5 guesses for eachletter under your belt.Characters that you need the most help with will be sent more frequently than the characters you&apos;re good at.&lt;/p&gt;&lt;p&gt;The important lesson is to learn to recognize and automatically type the letter you hear, without stressing out about the next letter. Be &lt;b&gt;sure&lt;/b&gt; to aim for accuracy not speed in this mode.&lt;/p&gt;&lt;p&gt;After you succeed in learning the characters, continue on to the speed training mode next where you&apos;ll be judged on both accuracy and speed.</source>
         <translation>&lt;p&gt;Dans ce mode, des caractères sont joués. Tu auras à presser la touche correspondante en moins d’une demi-seconde. L’exactitude de la réponse est plus importante que la vitesse.Pour progresser dans les caractères, tu dois parvenir à au moins 90% de caractères corrects.Les caractères pour lesquels tu as besoin de plus d’aide, ceux sur lesquels tu buttes, te seront proposés plus fréquemment que ceux déjà correctement acquis et sur lesquels tu ne fais pas ou plus de fautes.&lt;/p&gt;&lt;p&gt;Il est fondamental d’apprendre à reconnaître et à automatiquement taper la lettre que tu entends, sans inquiétude à propos de la lettre suivante. Sois &lt;b&gt;certain&lt;/b&gt; de l’exactitude de la réponse sans te soucier de la vitesse.&lt;/p&gt;&lt;p&gt;Après avoir réussi à apprendre les caractères, continue à par l’&lt;i&gt;Entraînement à la vitesse&lt;/i&gt; où tu seras jugé à la fois sur la vitesse mais aussi sur l’exactitude de tes réponses.</translation>
@@ -209,17 +214,33 @@
         <translation>Entrainement a la reconnaissance</translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="220"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="102"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="141"/>
+        <source>All percentage: %1, %2: NEW</source>
+        <translation>Tous les pourcentages : %1, %2 : NEW</translation>
+    </message>
+    <message>
+        <location filename="modes/LetterTrainingMode.cpp" line="187"/>
+        <source>&lt;font color=&quot;red&quot;&gt;%1&lt;/font&gt;</source>
+        <translation>&lt;font color=&quot;red&quot;&gt;%1&lt;/font&gt;</translation>
+    </message>
+    <message>
+        <location filename="modes/LetterTrainingMode.cpp" line="189"/>
+        <source>&lt;font color=&quot;black&quot;&gt;%1&lt;/font&gt;</source>
+        <translation>&lt;font color=&quot;black&quot;&gt;%1&lt;/font&gt;</translation>
+    </message>
+    <message>
+        <location filename="modes/LetterTrainingMode.cpp" line="218"/>
         <source>Percentage Goal</source>
         <translation>Pourcentage à atteindre</translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="224"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="222"/>
         <source>Minimum Correct Number</source>
         <translation>Nombre correct minimum</translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="228"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="226"/>
         <source>Delay to Next Letter (seconds)</source>
         <translation>Delai avant une nouvelle lettre (secondes)</translation>
     </message>
@@ -267,7 +288,7 @@
     <message>
         <location filename="modes/MorseMode.cpp" line="154"/>
         <source>Change Mode</source>
-        <translation type="unfinished">Changer de mode</translation>
+        <translation>Changer de mode</translation>
     </message>
     <message>
         <location filename="modes/MorseMode.cpp" line="155"/>
