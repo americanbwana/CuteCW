@@ -70,10 +70,10 @@ void KeyTraining::switchToMode()
     vbox->setStretchFactor(m_timingDisplay, 2);
 
     QGridLayout *grid = new QGridLayout();
-    grid->addWidget(new QLabel("Dit Accuracy:"), 0, 0);
-    grid->addWidget(new QLabel("Dah Accuracy:"), 0, 2);
-    grid->addWidget(new QLabel("Pause Accuracy:"), 1, 0);
-    grid->addWidget(new QLabel("Letter Spacing:"), 1, 2);
+    grid->addWidget(new QLabel(tr("Dit Accuracy:")), 0, 0);
+    grid->addWidget(new QLabel(tr("Dah Accuracy:")), 0, 2);
+    grid->addWidget(new QLabel(tr("Pause Accuracy:")), 1, 0);
+    grid->addWidget(new QLabel(tr("Letter Spacing:")), 1, 2);
 
     grid->addWidget(m_ditStats = new QLabel(""), 0, 1);
     grid->addWidget(m_dahStats = new QLabel(""), 0, 3);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr_FR">
+<TS version="2.0" language="fr_FR">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -44,28 +44,28 @@
     <message>
         <source>&lt;font color=&quot;green&quot;&gt;Select a starting place from the buttons below&lt;/font&gt;</source>
         <oldsource>&lt;font color=&quot;green&quot;&gt;Selecting a starting place from the buttons below&lt;/font&gt;</oldsource>
-        <translation type="vanished">&lt;font color=&quot;green&quot;&gt;Selectionnez quelquechose pour démarrer via les boutons ci-dessous&lt;/font&gt;</translation>
+        <translation>&lt;font color=&quot;green&quot;&gt;Selectionnez quelquechose pour démarrer via les boutons ci-dessous&lt;/font&gt;</translation>
     </message>
     <message>
         <source>test</source>
-        <translation type="vanished">coin coin</translation>
+        <translation>coin coin</translation>
     </message>
     <message>
         <source>Training Modes</source>
-        <translation type="vanished">Modes d&apos;entrainement</translation>
+        <translation>Modes d&apos;entrainement</translation>
     </message>
     <message>
         <source>Play Modes</source>
-        <translation type="vanished">Modes de jeu</translation>
+        <translation>Modes de jeu</translation>
     </message>
     <message>
         <source>&lt;p&gt;From this screen you can access all the other modes. This is just a starting screen.&lt;p&gt;If you want to learn morse code, consider following the steps in the left hand panel.Then, to continue your training and/or have some fun in the process, try the modes in the right hand panel.&lt;p&gt;Once you enter a mode, use the menus to navigate to other modes.&lt;/p&gt;</source>
         <oldsource>&lt;p&gt;From this screen you can access all the other modes.  This is just a starting screen.  &lt;p&gt;If you want to learn morse code, consider following the steps in the left hand panel.  Then, to continue your training and/or have some fun in the process, try the modes in the right hand panel.&lt;p&gt;once you enter a mode, use the menus to navegate to other modes.&lt;/p&gt;</oldsource>
-        <translation type="vanished">&lt;p&gt;Depuis cet écran vous pouvez accéder à tous les autres modes.  Ceci est juste un écran de démarrage.&lt;p&gt;Si vous voulez apprendre plus de code morse, considérez de suivre les étapes a gauche de l&apos;écran.Puis, pour continuer votre entrainement et/ou avoir plus d&apos;amusement, essayez les modes a droite de l&apos;écran.&lt;p&gt;Une fois que vous entrez dans un mode, utilisez les menus pour naviguer dans les autres modes.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Depuis cet écran vous pouvez accéder à tous les autres modes.  Ceci est juste un écran de démarrage.&lt;p&gt;Si vous voulez apprendre plus de code morse, considérez de suivre les étapes a gauche de l&apos;écran.Puis, pour continuer votre entrainement et/ou avoir plus d&apos;amusement, essayez les modes a droite de l&apos;écran.&lt;p&gt;Une fois que vous entrez dans un mode, utilisez les menus pour naviguer dans les autres modes.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="vanished">Page d&apos;accueil</translation>
+        <translation>Page d&apos;accueil</translation>
     </message>
 </context>
 <context>
@@ -139,7 +139,7 @@
         <translation>Entrainement par groupe</translation>
     </message>
     <message>
-        <location filename="modes/GroupingMode.cpp" line="111"/>
+        <location filename="modes/GroupingMode.cpp" line="116"/>
         <source>Characters in the chosen training sequence will be keyed starting with a single character.  Type in the characters you hear in the group.  Your results (good or bad) will be displayed on the screen in green/red colors indicating good/bad guesses.&lt;p&gt;As you guess more and more groups correctly the number of characters in the group will slowly go upward. After 4 successful series in a row, the number of characters in the group goes up by 1.&lt;p&gt;The time it takes to enter the group doesn&apos;t matter so it is possible to copy the group to paper insteador to perform memorization of the letters or sequence&lt;/p&gt;&lt;p&gt;After you get good at grouping, you may wish to try the &lt;i&gt;grouping game&lt;/i&gt;, which increases the charactersin the group more rapidly and also increases and decreases the WPM rate (and you can keep track of your scores!)</source>
         <translation>Les caractères dans cette séquence d’entraînement seront joués en commençant par un caractère seul.  Tape le ou les caractères que tu entends dans chaque groupe.  Tes résultats (bons ou mauvais) seront affichés sur l’écran, en vert ou rouge, indiquant les bonnes et les mauvaises réponses.&lt;p&gt;Comme tu décoderas de plus en plus de groupes correctement, le nombre de caractères dans le groupe augmentera lentement. Après quatre séries réussies, le nombre de caractères augmentera d’un caractère.&lt;p&gt;Le temps mis pour saisir le groupe ne compte pas aussi tu peux copier préalablement le groupe sur du papier ou faire travailler la mémoire des lettres ou des séquences.&lt;/p&gt;&lt;p&gt;Après avoir réussi dans le &lt;i&gt;mode de groupes&lt;/i&gt;, tu pourras essayer le &lt;i&gt;jeu de groupes&lt;/i&gt;, qui augmente les caractèresd’un groupe plus rapidement, qui augmente et réduit aussi la vitesse en mots par minute (et qui gardera aussi en mémoire tes scores !)</translation>
     </message>
@@ -160,17 +160,17 @@
         <translation>&lt;b&gt;Meilleurs scores : %1&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="modes/games/HighScoresDialog.cpp" line="29"/>
+        <location filename="modes/games/HighScoresDialog.cpp" line="37"/>
         <source>Your Name: </source>
         <translation>Votre nom :</translation>
     </message>
     <message>
-        <location filename="modes/games/HighScoresDialog.cpp" line="39"/>
+        <location filename="modes/games/HighScoresDialog.cpp" line="47"/>
         <source>Your Score: </source>
         <translation>Votre score :</translation>
     </message>
     <message>
-        <location filename="modes/games/HighScoresDialog.cpp" line="53"/>
+        <location filename="modes/games/HighScoresDialog.cpp" line="61"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
@@ -225,29 +225,49 @@
         <translation>Entrainement au manipulateur</translation>
     </message>
     <message>
-        <location filename="modes/KeyTraining.cpp" line="29"/>
+        <location filename="modes/KeyTraining.cpp" line="34"/>
         <source>this is for practing keying.</source>
         <translation>ceci est pour l&apos;entrainement a la manipulation.</translation>
     </message>
     <message>
-        <location filename="modes/KeyTraining.cpp" line="45"/>
+        <location filename="modes/KeyTraining.cpp" line="50"/>
         <source>&lt;font color=&quot;green&quot;&gt;Key the letters using any keyborad key as a straight key.&lt;/font&gt;</source>
         <translation>&lt;font color=&quot;green&quot;&gt;Tapez les lettres en utilisant n&apos;importe quelle touche du clavier comme manipulateur.&lt;/font&gt;</translation>
     </message>
     <message>
-        <location filename="modes/KeyTraining.cpp" line="55"/>
+        <location filename="modes/KeyTraining.cpp" line="60"/>
         <source>Number of Letters:</source>
         <translation>Nombre de lettres :</translation>
     </message>
     <message>
-        <location filename="modes/KeyTraining.cpp" line="236"/>
-        <location filename="modes/KeyTraining.cpp" line="242"/>
+        <location filename="modes/KeyTraining.cpp" line="73"/>
+        <source>Dit Accuracy:</source>
+        <translation>Précision du DIT :</translation>
+    </message>
+    <message>
+        <location filename="modes/KeyTraining.cpp" line="74"/>
+        <source>Dah Accuracy:</source>
+        <translation>Précision du DAH :</translation>
+    </message>
+    <message>
+        <location filename="modes/KeyTraining.cpp" line="75"/>
+        <source>Pause Accuracy:</source>
+        <translation>Précision de la pause :</translation>
+    </message>
+    <message>
+        <location filename="modes/KeyTraining.cpp" line="76"/>
+        <source>Letter Spacing:</source>
+        <translation>Espacement des lettres :</translation>
+    </message>
+    <message>
+        <location filename="modes/KeyTraining.cpp" line="241"/>
+        <location filename="modes/KeyTraining.cpp" line="247"/>
         <source>% too fast</source>
         <translation>% trop rapide</translation>
     </message>
     <message>
-        <location filename="modes/KeyTraining.cpp" line="238"/>
-        <location filename="modes/KeyTraining.cpp" line="244"/>
+        <location filename="modes/KeyTraining.cpp" line="243"/>
+        <location filename="modes/KeyTraining.cpp" line="249"/>
         <source>% too slow</source>
         <translation>% trop lent</translation>
     </message>
@@ -270,33 +290,33 @@
         <translation>Entrainement a la reconnaissance</translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="102"/>
-        <location filename="modes/LetterTrainingMode.cpp" line="141"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="107"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="146"/>
         <source>All percentage: %1, %2: NEW</source>
         <translation>Tous les pourcentages : %1, %2 : NEW</translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="187"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="192"/>
         <source>&lt;font color=&quot;red&quot;&gt;%1&lt;/font&gt;</source>
         <translation>&lt;font color=&quot;red&quot;&gt;%1&lt;/font&gt;</translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="189"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="194"/>
         <source>&lt;font color=&quot;black&quot;&gt;%1&lt;/font&gt;</source>
         <translation>&lt;font color=&quot;black&quot;&gt;%1&lt;/font&gt;</translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="218"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="223"/>
         <source>Percentage Goal</source>
         <translation>Pourcentage à atteindre</translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="222"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="227"/>
         <source>Minimum Correct Number</source>
         <translation>Nombre correct minimum</translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="226"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="231"/>
         <source>Delay to Next Letter (seconds)</source>
         <translation>Delai avant une nouvelle lettre (secondes)</translation>
     </message>
@@ -309,32 +329,32 @@
         <translation>Préférences de CuteCW</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="515"/>
+        <location filename="Morse.cpp" line="539"/>
         <source>Home</source>
         <translation>Accueil</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="522"/>
+        <location filename="Morse.cpp" line="546"/>
         <source>Play</source>
         <translation>Jouer</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="526"/>
+        <location filename="Morse.cpp" line="550"/>
         <source>Sequence</source>
         <translation>Séquence</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="529"/>
+        <location filename="Morse.cpp" line="553"/>
         <source>Change Words</source>
         <translation>Change les mots</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="547"/>
+        <location filename="Morse.cpp" line="571"/>
         <source>Training</source>
         <translation>Entrainement</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="569"/>
+        <location filename="Morse.cpp" line="593"/>
         <source>Games</source>
         <translation>Jeux</translation>
     </message>
@@ -590,7 +610,7 @@
         <translation>Lire pour moi</translation>
     </message>
     <message>
-        <location filename="modes/ReadMode.cpp" line="228"/>
+        <location filename="modes/ReadMode.cpp" line="233"/>
         <source>Read each word this many times:</source>
         <translation>Lire tous les mots autant de fois :</translation>
     </message>
@@ -613,32 +633,32 @@
         <translation>Entrainement à la vitesse</translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="187"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="192"/>
         <source>All WPM: %1, %2 WPM: %3</source>
         <translation>Tous les MPM : %1, %2 MPM. %3</translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="269"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="274"/>
         <source>Speed Acceptance Rate</source>
         <translation>Objectif de vitesse</translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="273"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="278"/>
         <source>Speed Increasing Aggressiveness</source>
         <translation>Augmentation de la vitesse</translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="277"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="282"/>
         <source>(lower values mean speed increases more quickly)</source>
         <translation>(Une valeur faible provoque une augmentation plus rapide de la vitesse)</translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="283"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="288"/>
         <source>Speed Multiplier</source>
         <translation>Multiplicateur de vitesse</translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="287"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="292"/>
         <source>(higher forces a slower starting speed)</source>
         <translation>(Elevé provoque une vitesse de départ plus faible)</translation>
     </message>
@@ -818,7 +838,7 @@
         <translation>La plupart des mots que que tu entendras ici sont issus des 1500 mots les plus utilisés en français.Si tu mémorises ces mots, tu les reconnaîtras non comme des lettres individuelles mais comme un mot entier et augmenteras alors ton taux de réussite.  &lt;p&gt;En entendant ces mots, tape-les au clavier puis appuie sur Entrée.  Après avoir validé un mot, le suivant sera transmis.  En débutant, le nombre de mots sera peu élevé mais augmentera à chaque bonne réponse (et diminuera à chaque mauvaise réponse).&lt;p&gt;Une fois que tu auras un bon niveau pour les mots d’un groupe, essaie de passer dans le &lt;i&gt;Jeu de Mots&lt;/i&gt; et vois quel score tu peux atteindre !</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="141"/>
+        <location filename="modes/WordTrainingMode.cpp" line="140"/>
         <source>Word Training</source>
         <translation>Entrainement par mots</translation>
     </message>
