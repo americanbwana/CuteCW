@@ -18,7 +18,7 @@ ReadMode::ReadMode(Morse *parent, Ui::MainWindow *ui)
 
 void
 ReadMode::switchToMode() {
-    m_ui->helpBar->setText("<font color=\"green\">Enter text and hit the play button to hear the entire sequence.</font>");
+    m_ui->helpBar->setText(tr("<font color=\"green\">Enter text and hit the play button to hear the entire sequence.</font>"));
     m_ui->play->show();
 
     clear();
@@ -90,14 +90,14 @@ ReadMode::fetchNews(const QString &source) {
     m_reply = m_manager->get(QNetworkRequest(QUrl(source)));
     if (m_reply) {
         connect(m_manager, SIGNAL(finished(QNetworkReply*)), this, SLOT(netLoadFinished(QNetworkReply*)));
-        m_textEdit->setText("Loading news....  Please wait....");
+        m_textEdit->setText(tr("Loading news....  Please wait...."));
     }
 }
 
 void
 ReadMode::netLoadFinished(QNetworkReply *reply) {
     if (reply->error() != QNetworkReply::NoError) {
-        m_textEdit->setText("Failed to load the news");
+        m_textEdit->setText(tr("Failed to load the news"));
         return;
     }
     QDomDocument document;
@@ -117,10 +117,10 @@ ReadMode::netLoadFinished(QNetworkReply *reply) {
             }
             m_textEdit->setText(totalText);
         } else {
-            m_textEdit->setText("no news is likely not good news in this case");
+            m_textEdit->setText(tr("no news is likely not good news in this case"));
         }
     } else {
-        m_textEdit->setText("Failed to load the news document");
+        m_textEdit->setText(tr("Failed to load the news document"));
     }
 }
 

@@ -17,7 +17,7 @@ void SpeedTrainingMode::switchToMode() {
     m_ui->letter->show();
     m_ui->changeSequence->show();
     //m_ui->forModes->show();
-    m_ui->helpBar->setText("<font color=\"green\">Type the letter you hear ASAP.  The keying will get faster.</font>");
+    m_ui->helpBar->setText(tr("<font color=\"green\">Type the letter you hear ASAP.  The keying will get faster.</font>"));
     m_ui->play->show();
     m_ui->WPM->show();
 
@@ -184,8 +184,7 @@ QTime SpeedTrainingMode::startNextTrainingKey() {
         totalWPM += pauseWPM;
     }
 
-    m_avewpmLabel->setText("All WPM: " + QString().setNum(msToPauseWPM(totalTime/letterCount)) + ", " +
-                          currentLetterGoal + " WPM: " + QString().setNum(msToPauseWPM(thisTime)));
+    m_avewpmLabel->setText(tr("All WPM: %1, %2 WPM: %3").arg(QString().setNum(msToPauseWPM(totalTime/letterCount))).arg(currentLetterGoal).arg(QString().setNum(msToPauseWPM(thisTime))));
     setWPMLabel(msToPauseWPMF((float(m_badCount + m_countWeight)/float(m_goodCount + m_countWeight)) * totalTime/float(letterCount)));
 
     // now pick a random time between 0 and the total of all the averages; averages with a slower speed are more likely

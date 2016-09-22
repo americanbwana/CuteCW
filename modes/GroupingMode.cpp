@@ -44,10 +44,10 @@ void GroupingMode::handleKeyPress(QChar letter) {
     if (m_currentSequence.length() == m_enteredWord.length()) {
         if (m_wordWasGood) {
             m_goodGuesses++;
-            m_ui->letter->setText(m_ui->letter->text() + " - <font color=\"green\">GOOD</font>");
+            m_ui->letter->setText(tr("%1 - <font color=\"green\">GOOD</font>").arg(m_ui->letter->text()));
         } else {
             m_badGuesses++;
-            m_ui->letter->setText(m_ui->letter->text() + " - <font color=\"red\">FAIL (" + m_currentSequence + ")</font>");
+            m_ui->letter->setText(tr("%1 - <font color=\"red\">FAIL (%2)</font>").arg(m_ui->letter->text()).arg(m_currentSequence));
         }
         emit groupEntered(m_rightCount, m_currentSequence.length());
     }
@@ -55,7 +55,7 @@ void GroupingMode::handleKeyPress(QChar letter) {
 }
 
 void GroupingMode::setSequenceText() {
-    m_sequenceLabel->setText(QString("current length = %1, good = %2, bad = %3").arg(m_groupLength).arg(m_goodGuesses).arg(m_badGuesses));
+    m_sequenceLabel->setText(tr("current length = %1, good = %2, bad = %3").arg(m_groupLength).arg(m_goodGuesses).arg(m_badGuesses));
 }
 
 void GroupingMode::createNextSequence() {

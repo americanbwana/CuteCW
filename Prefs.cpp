@@ -39,8 +39,8 @@ Prefs::Prefs(Morse *morse, QWidget *parent) :
     genericForm->addRow(tr("Play startup sound"), m_StartSound);
 
     m_Lang = new QComboBox();
-    m_Lang->addItem("English", QVariant("en"));
-    m_Lang->addItem("Français", QVariant("fr"));
+    m_Lang->addItem(tr("English"), QVariant("en"));
+    m_Lang->addItem(tr("Français"), QVariant("fr"));
 
     int langIndex = m_Lang->findData(QVariant(m_morse->lang()));
     m_Lang->setCurrentIndex(langIndex);

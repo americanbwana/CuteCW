@@ -42,7 +42,7 @@ void KeyTraining::changeNumberOfLetters(int value) {
 void KeyTraining::switchToMode()
 {
     m_ui->letter->show();
-    m_ui->helpBar->setText("<font color=\"green\">Key the letters using any keyborad key as a straight key.</font>");
+    m_ui->helpBar->setText(tr("<font color=\"green\">Key the letters using any keyborad key as a straight key.</font>"));
     m_ui->play->show();
 
     QVBoxLayout *vbox = new QVBoxLayout();

@@ -23,7 +23,7 @@ void WordGame::switchToMode() {
 
 void WordGame::modeMenus() {
     // Create the high scores button
-    QAction *action = menu()->addAction("HighScores");
+    QAction *action = menu()->addAction(tr("HighScores"));
     connect(action, SIGNAL(triggered()), &m_scores, SLOT(showScores()));
 }
 

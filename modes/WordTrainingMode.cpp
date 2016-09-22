@@ -26,23 +26,23 @@ void WordTrainingMode::setupWordsMenu() {
     QMenu *modeMenu = new QMenu(m_ui->changeWords);
     m_ui->changeWords->setMenu(modeMenu);
 
-    QAction *action = modeMenu->addAction("Words 1-100");
+    QAction *action = modeMenu->addAction(tr("Words 1-100"));
     connect(action, SIGNAL(triggered()), m_wordSignalMapper, SLOT(map()));
     m_wordSignalMapper->setMapping(action, (int) N100);
 
-    action = modeMenu->addAction("Words 101-200");
+    action = modeMenu->addAction(tr("Words 101-200"));
     connect(action, SIGNAL(triggered()), m_wordSignalMapper, SLOT(map()));
     m_wordSignalMapper->setMapping(action, (int) N200);
 
-    action = modeMenu->addAction("Words 201-300");
+    action = modeMenu->addAction(tr("Words 201-300"));
     connect(action, SIGNAL(triggered()), m_wordSignalMapper, SLOT(map()));
     m_wordSignalMapper->setMapping(action, (int) N300);
 
-    action = modeMenu->addAction("Words 301-400");
+    action = modeMenu->addAction(tr("Words 301-400"));
     connect(action, SIGNAL(triggered()), m_wordSignalMapper, SLOT(map()));
     m_wordSignalMapper->setMapping(action, (int) N400);
 
-    action = modeMenu->addAction("Words 401-500");
+    action = modeMenu->addAction(tr("Words 401-500"));
     connect(action, SIGNAL(triggered()), m_wordSignalMapper, SLOT(map()));
     m_wordSignalMapper->setMapping(action, (int) N500);
 
@@ -54,7 +54,7 @@ void WordTrainingMode::switchToMode() {
 
     m_ui->letter->show();
     m_ui->changeWords->show();
-    m_ui->helpBar->setText("<font color=\"green\">Enter the word you hear and hit enter.</font>");
+    m_ui->helpBar->setText(tr("<font color=\"green\">Enter the word you hear and hit enter.</font>"));
     m_ui->play->show();
 
     setupWordsMenu();
@@ -109,7 +109,7 @@ void WordTrainingMode::handleKeyPress(QChar letter) {
     m_enteredWord.append(letter);
     if ((*(words[m_wordsNumber]))[m_wordnumber].length() == m_enteredWord.length()) {
         if (m_wordWasGood) {
-            m_ui->letter->setText(m_ui->letter->text() + " - <font color=\"green\">GOOD</font>");
+            m_ui->letter->setText(tr("%1 - <font color=\"green\">GOOD</font>").arg(m_ui->letter->text()));
             if (m_maxWord < 10)
                 m_maxWord += 2;
             else
@@ -118,7 +118,7 @@ void WordTrainingMode::handleKeyPress(QChar letter) {
                 m_maxWord = (*(words[m_wordsNumber])).count();
 
         } else {
-            m_ui->letter->setText(m_ui->letter->text() + " - <font color=\"red\">FAIL (" + (*(words[m_wordsNumber]))[m_wordnumber] + ")</font>");
+            m_ui->letter->setText(tr("%1 - <font color=\"red\">FAIL (%2)</font>").arg(m_ui->letter->text()).arg((*(words[m_wordsNumber]))[m_wordnumber]));
             if (m_maxWord > 1)
                 m_maxWord--;
         }

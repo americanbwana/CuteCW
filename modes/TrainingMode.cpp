@@ -23,23 +23,23 @@ void TrainingMode::setupSequences() {
 
     QMenu *subMenu = modeMenu->addMenu(tr("Koch"));
 
-    QAction *action = subMenu->addAction("Full Koch");
+    QAction *action = subMenu->addAction(tr("Full Koch"));
     connect(action, SIGNAL(triggered()), m_sequenceSignalMapper, SLOT(map()));
     m_sequenceSignalMapper->setMapping(action, (int) KOCH);
 
-    action = subMenu->addAction("Koch part 1");
+    action = subMenu->addAction(tr("Koch part 1"));
     connect(action, SIGNAL(triggered()), m_sequenceSignalMapper, SLOT(map()));
     m_sequenceSignalMapper->setMapping(action, (int) KOCH1);
 
-    action = subMenu->addAction("Koch part 2");
+    action = subMenu->addAction(tr("Koch part 2"));
     connect(action, SIGNAL(triggered()), m_sequenceSignalMapper, SLOT(map()));
     m_sequenceSignalMapper->setMapping(action, (int) KOCH2);
 
-    action = subMenu->addAction("Koch part 3");
+    action = subMenu->addAction(tr("Koch part 3"));
     connect(action, SIGNAL(triggered()), m_sequenceSignalMapper, SLOT(map()));
     m_sequenceSignalMapper->setMapping(action, (int) KOCH3);
 
-    action = subMenu->addAction("Koch part 4");
+    action = subMenu->addAction(tr("Koch part 4"));
     connect(action, SIGNAL(triggered()), m_sequenceSignalMapper, SLOT(map()));
     m_sequenceSignalMapper->setMapping(action, (int) KOCH4);
 
@@ -47,7 +47,7 @@ void TrainingMode::setupSequences() {
     // Alphabet sequences
     subMenu = modeMenu->addMenu(tr("Alphabet"));
 
-    action = subMenu->addAction("Full");
+    action = subMenu->addAction(tr("Full"));
     connect(action, SIGNAL(triggered()), m_sequenceSignalMapper, SLOT(map()));
     m_sequenceSignalMapper->setMapping(action, (int) ALPHABET);
 
@@ -93,21 +93,21 @@ void TrainingMode::setupSequences() {
 
     // numbers and symbols
 
-    action = modeMenu->addAction("Numbers");
+    action = modeMenu->addAction(tr("Numbers"));
     connect(action, SIGNAL(triggered()), m_sequenceSignalMapper, SLOT(map()));
     m_sequenceSignalMapper->setMapping(action, (int) NUMBERS);
 
-    action = modeMenu->addAction("Symbols");
+    action = modeMenu->addAction(tr("Symbols"));
     connect(action, SIGNAL(triggered()), m_sequenceSignalMapper, SLOT(map()));
     m_sequenceSignalMapper->setMapping(action, (int) SYMBOLS);
 
-    action = modeMenu->addAction("Everything");
+    action = modeMenu->addAction(tr("Everything"));
     connect(action, SIGNAL(triggered()), m_sequenceSignalMapper, SLOT(map()));
     m_sequenceSignalMapper->setMapping(action, (int) EVERYTHING);
 
     // Custom
 
-    action = modeMenu->addAction("Custom");
+    action = modeMenu->addAction(tr("Custom"));
     connect(action, SIGNAL(triggered()), this, SLOT(chooseCustomeSequence()));
 
     // Connect the mapper
@@ -159,7 +159,7 @@ void TrainingMode::clear()  {
     m_goodCount = 0;
     m_badCount = 0;
 
-    m_avewpmLabel->setText("All WPM: [None], K WPM: NEW");
+    m_avewpmLabel->setText(tr("All WPM: [None], K WPM: NEW"));
 
     if (runningMode() == RUNNING)
         playButton(); // pretend a pause was pressed too

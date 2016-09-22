@@ -76,6 +76,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="modes/games/GroupGame.cpp" line="26"/>
+        <source>HighScores</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="modes/games/GroupGame.cpp" line="35"/>
         <source>Grouping Game</source>
         <translation type="unfinished"></translation>
@@ -114,6 +119,21 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="modes/GroupingMode.cpp" line="47"/>
+        <source>%1 - &lt;font color=&quot;green&quot;&gt;GOOD&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/GroupingMode.cpp" line="50"/>
+        <source>%1 - &lt;font color=&quot;red&quot;&gt;FAIL (%2)&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/GroupingMode.cpp" line="58"/>
+        <source>current length = %1, good = %2, bad = %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="modes/GroupingMode.cpp" line="106"/>
         <source>Grouping Training</source>
         <translation type="unfinished"></translation>
@@ -121,6 +141,14 @@
     <message>
         <location filename="modes/GroupingMode.cpp" line="111"/>
         <source>Characters in the chosen training sequence will be keyed starting with a single character.  Type in the characters you hear in the group.  Your results (good or bad) will be displayed on the screen in green/red colors indicating good/bad guesses.&lt;p&gt;As you guess more and more groups correctly the number of characters in the group will slowly go upward. After 4 successful series in a row, the number of characters in the group goes up by 1.&lt;p&gt;The time it takes to enter the group doesn&apos;t matter so it is possible to copy the group to paper insteador to perform memorization of the letters or sequence&lt;/p&gt;&lt;p&gt;After you get good at grouping, you may wish to try the &lt;i&gt;grouping game&lt;/i&gt;, which increases the charactersin the group more rapidly and also increases and decreases the WPM rate (and you can keep track of your scores!)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>HighScores</name>
+    <message>
+        <location filename="modes/games/HighScores.cpp" line="54"/>
+        <source>GamesHigh Scores</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -155,6 +183,16 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="modes/games/KeyInvaders.cpp" line="95"/>
+        <source>HighScores</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/games/KeyInvaders.cpp" line="113"/>
+        <source>Fear The Invaders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="modes/games/KeyInvaders.cpp" line="149"/>
         <source>&lt;p&gt;Shoot letters falling from the sky by keying them appropriately.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
@@ -162,6 +200,19 @@
     <message>
         <location filename="modes/games/KeyInvaders.cpp" line="154"/>
         <source>Key Invaders</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>KeyTimingDisplay</name>
+    <message>
+        <location filename="widgets/KeyTimingDisplay.cpp" line="29"/>
+        <source>keyed:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="widgets/KeyTimingDisplay.cpp" line="30"/>
+        <source>expected:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -175,6 +226,11 @@
     <message>
         <location filename="modes/KeyTraining.cpp" line="29"/>
         <source>this is for practing keying.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/KeyTraining.cpp" line="45"/>
+        <source>&lt;font color=&quot;green&quot;&gt;Key the letters using any keyborad key as a straight key.&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -363,6 +419,11 @@
 <context>
     <name>PlayMode</name>
     <message>
+        <location filename="modes/PlayMode.cpp" line="15"/>
+        <source>&lt;font color=&quot;green&quot;&gt;Type letters to hear the keys in morse code&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="modes/PlayMode.cpp" line="22"/>
         <source>&lt;p&gt;In &lt;/i&gt;Type Morse Code&lt;/i&gt; mode, simply type keys and the Cute CW engine will play what you type at the speeds set in the preferences dialog box.  This is a fun mode to simply hear code that you type, but to begin your true training, switch to one of the other modes.&lt;p&gt;You may also wish to try the &lt;i&gt;read to me&lt;/i&gt; mode as well.</source>
         <translation type="unfinished"></translation>
@@ -393,6 +454,16 @@
     <message>
         <location filename="Prefs.cpp" line="39"/>
         <source>Play startup sound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Prefs.cpp" line="42"/>
+        <source>English</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Prefs.cpp" line="43"/>
+        <source>Français</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -437,8 +508,33 @@
 <context>
     <name>ReadMode</name>
     <message>
+        <location filename="modes/ReadMode.cpp" line="21"/>
+        <source>&lt;font color=&quot;green&quot;&gt;Enter text and hit the play button to hear the entire sequence.&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="modes/ReadMode.cpp" line="37"/>
         <source>Load File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/ReadMode.cpp" line="93"/>
+        <source>Loading news....  Please wait....</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/ReadMode.cpp" line="100"/>
+        <source>Failed to load the news</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/ReadMode.cpp" line="120"/>
+        <source>no news is likely not good news in this case</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/ReadMode.cpp" line="123"/>
+        <source>Failed to load the news document</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -475,6 +571,11 @@
 <context>
     <name>SpeedTrainingMode</name>
     <message>
+        <location filename="modes/SpeedTrainingMode.cpp" line="20"/>
+        <source>&lt;font color=&quot;green&quot;&gt;Type the letter you hear ASAP.  The keying will get faster.&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="modes/SpeedTrainingMode.cpp" line="86"/>
         <source>Characters in the sequence will play at you with short pauses between each character.  The goal here is to train for both accuracy while under slight pressure as the next letter starts playing at you.  As you guess more and more correctly the speed will increase and incorrect guesses will slow down the keying rate.  As you get better, the spacing between the letters will decrease and will continue to challange you hopefully right near your learning point.</source>
         <translation type="unfinished"></translation>
@@ -485,27 +586,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="270"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="187"/>
+        <source>All WPM: %1, %2 WPM: %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/SpeedTrainingMode.cpp" line="269"/>
         <source>Speed Acceptance Rate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="274"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="273"/>
         <source>Speed Increasing Aggressiveness</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="278"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="277"/>
         <source>(lower values mean speed increases more quickly)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="284"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="283"/>
         <source>Speed Multiplier</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/SpeedTrainingMode.cpp" line="288"/>
+        <location filename="modes/SpeedTrainingMode.cpp" line="287"/>
         <source>(higher forces a slower starting speed)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -518,13 +624,63 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="modes/TrainingMode.cpp" line="26"/>
+        <source>Full Koch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/TrainingMode.cpp" line="30"/>
+        <source>Koch part 1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/TrainingMode.cpp" line="34"/>
+        <source>Koch part 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/TrainingMode.cpp" line="38"/>
+        <source>Koch part 3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/TrainingMode.cpp" line="42"/>
+        <source>Koch part 4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="modes/TrainingMode.cpp" line="48"/>
         <source>Alphabet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="modes/TrainingMode.cpp" line="50"/>
+        <source>Full</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="modes/TrainingMode.cpp" line="71"/>
         <source>Similar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/TrainingMode.cpp" line="96"/>
+        <source>Numbers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/TrainingMode.cpp" line="100"/>
+        <source>Symbols</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/TrainingMode.cpp" line="104"/>
+        <source>Everything</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/TrainingMode.cpp" line="110"/>
+        <source>Custom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -537,12 +693,22 @@
         <source>Use &amp;Entire Sequence</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="modes/TrainingMode.cpp" line="162"/>
+        <source>All WPM: [None], K WPM: NEW</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>WordGame</name>
     <message>
         <location filename="modes/games/WordGame.cpp" line="20"/>
         <source>&lt;font color=&quot;green&quot;&gt;Type the groups of characters you hear ASAP.&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/games/WordGame.cpp" line="26"/>
+        <source>HighScores</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -575,8 +741,48 @@
 <context>
     <name>WordTrainingMode</name>
     <message>
+        <location filename="modes/WordTrainingMode.cpp" line="29"/>
+        <source>Words 1-100</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/WordTrainingMode.cpp" line="33"/>
+        <source>Words 101-200</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/WordTrainingMode.cpp" line="37"/>
+        <source>Words 201-300</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/WordTrainingMode.cpp" line="41"/>
+        <source>Words 301-400</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/WordTrainingMode.cpp" line="45"/>
+        <source>Words 401-500</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/WordTrainingMode.cpp" line="57"/>
+        <source>&lt;font color=&quot;green&quot;&gt;Enter the word you hear and hit enter.&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="modes/WordTrainingMode.cpp" line="88"/>
         <source>Words: %1/%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/WordTrainingMode.cpp" line="112"/>
+        <source>%1 - &lt;font color=&quot;green&quot;&gt;GOOD&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/WordTrainingMode.cpp" line="121"/>
+        <source>%1 - &lt;font color=&quot;red&quot;&gt;FAIL (%2)&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

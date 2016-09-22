@@ -51,6 +51,7 @@ int HighScores::addScore(const QString &name, int score)
 
 void HighScores::showScores() {
     HighScoresDialog hsdialog(m_tableName, &m_scores, -1, -1);
+    hsdialog.setWindowTitle(tr("GamesHigh Scores"));
     hsdialog.exec();
 }
 

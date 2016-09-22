@@ -92,7 +92,7 @@ void KeyInvaders::switchToMode() {
 
 void KeyInvaders::modeMenus() {
     // Create the high scores button
-    QAction *action = menu()->addAction("HighScores");
+    QAction *action = menu()->addAction(tr("HighScores"));
     connect(action, SIGNAL(triggered()), &m_scores, SLOT(showScores()));
 }
 
@@ -110,7 +110,7 @@ void KeyInvaders::setupWidgets() {
     m_scene->addRect(-10,0,220,100,whitePen);
     m_scene->addRect(-10,maxInvaderY,220,10, greenPen, greenBrush);
 
-    QGraphicsTextItem *item = m_scene->addText("Fear The Invaders");
+    QGraphicsTextItem *item = m_scene->addText(tr("Fear The Invaders"));
     item->setZValue(-5);
     item->setPos(20,50);
 

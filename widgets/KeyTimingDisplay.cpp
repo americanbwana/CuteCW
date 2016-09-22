@@ -26,8 +26,8 @@ void KeyTimingDisplay::paintEvent(QPaintEvent *event)
     painter.drawRect(0, 0, width(), height());
 
     painter.setPen(Qt::yellow);
-    painter.drawText(QRect(0, lineHeight, 100, lineHeight), "keyed:");
-    painter.drawText(QRect(0, lineHeight*2 + spacingHeight, 100, lineHeight), "expected:");
+    painter.drawText(QRect(0, lineHeight, 100, lineHeight), tr("keyed:"));
+    painter.drawText(QRect(0, lineHeight*2 + spacingHeight, 100, lineHeight), tr("expected:"));
 
     if (m_keyedTimings.length() > 0) {
         int biggestTime = qMax(m_keyedTimings.last(), m_requiredTimings.last());

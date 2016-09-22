@@ -12,7 +12,7 @@ void PlayMode::handleKeyPress(QChar letterPressed)
 
 void PlayMode::switchToMode()
 {
-    m_ui->helpBar->setText("<font color=\"green\">Type letters to hear the keys in morse code</font>");
+    m_ui->helpBar->setText(tr("<font color=\"green\">Type letters to hear the keys in morse code</font>"));
     clear();
     setupWPMWidgets();
 }
