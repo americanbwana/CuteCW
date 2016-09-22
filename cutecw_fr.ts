@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="fr_FR">
+<TS version="2.1" language="fr_FR">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -42,31 +42,30 @@
 <context>
     <name>FrontPage</name>
     <message>
-        <location filename="modes/FrontPage.cpp" line="17"/>
         <source>&lt;font color=&quot;green&quot;&gt;Select a starting place from the buttons below&lt;/font&gt;</source>
         <oldsource>&lt;font color=&quot;green&quot;&gt;Selecting a starting place from the buttons below&lt;/font&gt;</oldsource>
-        <translation>&lt;font color=&quot;green&quot;&gt;Selectionnez quelquechose pour démarrer via les boutons ci-dessous&lt;/font&gt;</translation>
+        <translation type="vanished">&lt;font color=&quot;green&quot;&gt;Selectionnez quelquechose pour démarrer via les boutons ci-dessous&lt;/font&gt;</translation>
     </message>
     <message>
-        <location filename="modes/FrontPage.cpp" line="35"/>
+        <source>test</source>
+        <translation type="vanished">coin coin</translation>
+    </message>
+    <message>
         <source>Training Modes</source>
-        <translation>Modes d&apos;entrainement</translation>
+        <translation type="vanished">Modes d&apos;entrainement</translation>
     </message>
     <message>
-        <location filename="modes/FrontPage.cpp" line="36"/>
         <source>Play Modes</source>
-        <translation>Modes de jeu</translation>
+        <translation type="vanished">Modes de jeu</translation>
     </message>
     <message>
-        <location filename="modes/FrontPage.cpp" line="87"/>
         <source>&lt;p&gt;From this screen you can access all the other modes. This is just a starting screen.&lt;p&gt;If you want to learn morse code, consider following the steps in the left hand panel.Then, to continue your training and/or have some fun in the process, try the modes in the right hand panel.&lt;p&gt;Once you enter a mode, use the menus to navigate to other modes.&lt;/p&gt;</source>
         <oldsource>&lt;p&gt;From this screen you can access all the other modes.  This is just a starting screen.  &lt;p&gt;If you want to learn morse code, consider following the steps in the left hand panel.  Then, to continue your training and/or have some fun in the process, try the modes in the right hand panel.&lt;p&gt;once you enter a mode, use the menus to navegate to other modes.&lt;/p&gt;</oldsource>
-        <translation>&lt;p&gt;Depuis cet écran vous pouvez accéder à tous les autres modes.  Ceci est juste un écran de démarrage.&lt;p&gt;Si vous voulez apprendre plus de code morse, considérez de suivre les étapes a gauche de l&apos;écran.Puis, pour continuer votre entrainement et/ou avoir plus d&apos;amusement, essayez les modes a droite de l&apos;écran.&lt;p&gt;Une fois que vous entrez dans un mode, utilisez les menus pour naviguer dans les autres modes.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;Depuis cet écran vous pouvez accéder à tous les autres modes.  Ceci est juste un écran de démarrage.&lt;p&gt;Si vous voulez apprendre plus de code morse, considérez de suivre les étapes a gauche de l&apos;écran.Puis, pour continuer votre entrainement et/ou avoir plus d&apos;amusement, essayez les modes a droite de l&apos;écran.&lt;p&gt;Une fois que vous entrez dans un mode, utilisez les menus pour naviguer dans les autres modes.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="modes/FrontPage.cpp" line="95"/>
         <source>Home Page</source>
-        <translation>Page d&apos;accueil</translation>
+        <translation type="vanished">Page d&apos;accueil</translation>
     </message>
 </context>
 <context>
@@ -416,6 +415,31 @@
         <location filename="modes/MorseMode.cpp" line="413"/>
         <source>Average WPM:</source>
         <translation>Moyenne MPM :</translation>
+    </message>
+    <message>
+        <location filename="modes/FrontPage.cpp" line="24"/>
+        <source>&lt;font color=&quot;green&quot;&gt;Select a starting place from the buttons below&lt;/font&gt;</source>
+        <translation>&lt;font color=&quot;green&quot;&gt;Selectionnez quelquechose pour démarrer via les boutons ci-dessous&lt;/font&gt;</translation>
+    </message>
+    <message>
+        <location filename="modes/FrontPage.cpp" line="42"/>
+        <source>Training Modes</source>
+        <translation>Modes d&apos;entrainement</translation>
+    </message>
+    <message>
+        <location filename="modes/FrontPage.cpp" line="43"/>
+        <source>Play Modes</source>
+        <translation>Modes de jeu</translation>
+    </message>
+    <message>
+        <location filename="modes/FrontPage.cpp" line="94"/>
+        <source>&lt;p&gt;From this screen you can access all the other modes. This is just a starting screen.&lt;p&gt;If you want to learn morse code, consider following the steps in the left hand panel.Then, to continue your training and/or have some fun in the process, try the modes in the right hand panel.&lt;p&gt;Once you enter a mode, use the menus to navigate to other modes.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;Depuis cet écran vous pouvez accéder à tous les autres modes.  Ceci est juste un écran de démarrage.&lt;p&gt;Si vous voulez apprendre plus de code morse, considérez de suivre les étapes a gauche de l&apos;écran.Puis, pour continuer votre entrainement et/ou avoir plus d&apos;amusement, essayez les modes a droite de l&apos;écran.&lt;p&gt;Une fois que vous entrez dans un mode, utilisez les menus pour naviguer dans les autres modes.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <location filename="modes/FrontPage.cpp" line="102"/>
+        <source>Home Page</source>
+        <translation>Page d&apos;accueil</translation>
     </message>
 </context>
 <context>

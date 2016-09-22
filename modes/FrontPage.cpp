@@ -12,9 +12,16 @@ FrontPage::FrontPage(Morse *parent, Ui::MainWindow *ui)
 {
 }
 
+/* NOTE:
+ * FrontPage is child of MorseMode
+ * AND, FrontPage is not direct child of QObject and cannot have Q_OBJECT
+ * Maybe it can, but I don't found really how to do this, properly, and easily
+ * Sooo, all tr() in FrontPage.cpp would be done using MorseMode::tr() to be dependant, and works
+ */
+
 void FrontPage::switchToMode()
 {
-    m_ui->helpBar->setText(tr("<font color=\"green\">Select a starting place from the buttons below</font>"));
+    m_ui->helpBar->setText(MorseMode::tr("<font color=\"green\">Select a starting place from the buttons below</font>"));
 
     m_ui->letter->hide();
     m_ui->play->hide();
@@ -32,8 +39,8 @@ void FrontPage::setupWidgets() {
     topVBox->setStretchFactor(mainHBox, 5);
     topVBox->addLayout(mainHBox);
 
-    QGroupBox *leftGroup = new QGroupBox(tr("Training Modes"));
-    QGroupBox *rightGroup = new QGroupBox(tr("Play Modes"));
+    QGroupBox *leftGroup = new QGroupBox(MorseMode::tr("Training Modes"));
+    QGroupBox *rightGroup = new QGroupBox(MorseMode::tr("Play Modes"));
 #ifndef SMALL_DEVICE
     QFont groupFont = leftGroup->font();
     groupFont.setPointSize(3 * groupFont.pointSize() / 2);
@@ -84,7 +91,7 @@ void FrontPage::setupWidgets() {
 
 QString FrontPage::helpText()
 {
-    return tr("<p>From this screen you can access all the other modes. This is just a starting screen."
+    return MorseMode::tr("<p>From this screen you can access all the other modes. This is just a starting screen."
               "<p>If you want to learn morse code, consider following the steps in the left hand panel."
               "Then, to continue your training and/or have some fun in the process, try the modes in the right hand panel."
               "<p>Once you enter a mode, use the menus to navigate to other modes.</p>");
@@ -92,5 +99,5 @@ QString FrontPage::helpText()
 
 QString FrontPage::name()
 {
-    return tr("Home Page");
+    return MorseMode::tr("Home Page");
 }
