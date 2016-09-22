@@ -91,6 +91,9 @@ HEADERS  += MainWindow.h \
 
 FORMS    += AboutDialog.ui
 
+
+DEFINES += "QT_MESSAGELOGCONTEXT=TRUE"
+
 CONFIG += mobility
 MOBILITY = 
 

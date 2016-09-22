@@ -11,6 +11,9 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
+    // Set qDebug pattern
+    qSetMessagePattern("[%{time}][%{if-debug}D%{endif}%{if-info}I%{endif}%{if-warning}W%{endif}%{if-critical}C%{endif}%{if-fatal}F%{endif}][%{file}:%{line} (%{function})] %{message}");
+
 #ifdef PORTABLE_BUILD
     QSettings settings(QDir::currentPath() + "/cutecw.cfg", QSettings::IniFormat);
     qDebug() << "Using portable config from" << QDir::currentPath() << "/cutecw.cfg";

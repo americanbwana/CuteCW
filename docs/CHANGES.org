@@ -7,6 +7,7 @@
 *** DONE Added language FR/EN selector in options
 *** DONE Original repository audio issue #12 merged
 *** DONE Compilation-time option to make a portable build (it will use config from runtime dir)
+*** DONE Improved qDebug() with custom message pattern with file, function, time, criticity
 * Version: 1.0
 *** DONE fix random sources on windows
 *** DONE Added the ability to read news from various news sources
