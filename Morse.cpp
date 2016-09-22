@@ -140,9 +140,11 @@ Morse::playSequence()
     m_playBuffer->restartData();
     m_playBuffer->start();
     m_playingMode = PLAYING;
+
+    /* Same crap bug like on Morse::setAudioMode
+     */
     if (m_audioOutput->error() != QAudio::NoError) {
-        // on OS X especially, this is needed on a regular basis.
-        // (on OS X, it's every time the audio pauses)
+        // on OS X, it's every time the audio pauses
         m_audioOutput = m_parent->createAudioOutput();
     }
     
@@ -207,7 +209,15 @@ void Morse::generatorDone() {
 
 void Morse::setAudioMode(AudioMode newmode) {
     m_playingMode = newmode;
-    m_audioOutput->stop();
+    /* Like in Morse::playSequence we have the MAC OSX bug
+     * If we call m_audioOutput->stop() we will get a crash
+     * Instead, call a stop on the playBuffer and let things goes on
+     */
+#ifdef Q_OS_DARWIN
+        m_playBuffer->stop();
+#else
+        m_audioOutput->stop();
+#endif
 }
 
 void Morse::pauseAudio() {
