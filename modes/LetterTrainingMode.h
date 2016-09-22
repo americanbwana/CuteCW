@@ -18,6 +18,7 @@ public:
     virtual bool elapsedTimeWasTooLong(int msElapsed, MorseStat *stat);
 
     virtual QString name();
+    virtual QString rawName();
     virtual QString helpText();
     virtual QString icon();
 

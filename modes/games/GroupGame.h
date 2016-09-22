@@ -18,6 +18,7 @@ public:
     virtual void modeMenus();
 
     virtual QString name();
+    virtual QString rawName();
     virtual QString helpText();
     virtual QString icon();
 

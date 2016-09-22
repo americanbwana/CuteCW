@@ -136,9 +136,12 @@ QString WordTrainingMode::helpText()
                "<p>Once you get good at the words in this group, try switching to the <i>Word Game</i> mode and see what score you can achieve!");
 }
 
-QString WordTrainingMode::name()
-{
+QString WordTrainingMode::name() {
     return tr("Word Training");
+}
+
+QString WordTrainingMode::rawName() {
+    return "Word Training";
 }
 
 QString WordTrainingMode::icon()
@@ -148,14 +151,14 @@ QString WordTrainingMode::icon()
 
 void WordTrainingMode::loadSettings(QSettings &settings)
 {
-    QString prefix = name();
+    QString prefix = rawName();
     m_wordsNumber = (wordNums) settings.value(prefix + "/wordsNumber",  int(N100)).toInt();
     m_maxWord     =            settings.value(prefix + "/maxWord",      2).toInt();
 }
 
 void WordTrainingMode::saveSettings(QSettings &settings)
 {
-    QString prefix = name();
+    QString prefix = rawName();
     settings.setValue(prefix + "/wordsNumber", m_wordsNumber);
     settings.setValue(prefix + "/maxWord",     m_maxWord);
 }

@@ -154,6 +154,11 @@ QString KeyInvaders::name()
     return tr("Key Invaders");
 }
 
+QString KeyInvaders::rawName()
+{
+    return "Key Invaders";
+}
+
 QString KeyInvaders::icon()
 {
     return ":/icons/64x64/game.png";

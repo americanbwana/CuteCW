@@ -21,6 +21,7 @@ public:
     void addButtons();
 
     virtual QString name();
+    virtual QString rawName();
     virtual QString helpText();
     virtual QString icon();
 

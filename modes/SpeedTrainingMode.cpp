@@ -94,6 +94,11 @@ QString SpeedTrainingMode::name()
     return tr("Speed Training");
 }
 
+QString SpeedTrainingMode::rawName()
+{
+    return "Speed Training";
+}
+
 QString SpeedTrainingMode::icon()
 {
     return ":/icons/64x64/speed.png";

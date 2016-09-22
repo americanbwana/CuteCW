@@ -32,6 +32,7 @@ public:
     // standard functions
     virtual QString helpText();
     virtual QString name();
+    virtual QString rawName();
     virtual QString icon();
     virtual void gameOver();
 

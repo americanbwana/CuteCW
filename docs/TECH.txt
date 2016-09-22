@@ -1,0 +1,4 @@
+Some tech notes about Cute CW.
+
+Modes and games have a function name() which returns the translated name of the game/mode
+    But also rawName() which returns the non-translated name, used for like, configuration to avoid problems caused by translation

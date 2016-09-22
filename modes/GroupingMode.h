@@ -20,6 +20,7 @@ public:
     virtual void setSequenceText();
 
     virtual QString name();
+    virtual QString rawName();
     virtual QString helpText();
     virtual QString icon();
 

@@ -25,6 +25,7 @@ public:
     void handleWordResponse(QChar letter);
 
     virtual QString name();
+    virtual QString rawName();
     virtual QString helpText();
     virtual QString icon();
 

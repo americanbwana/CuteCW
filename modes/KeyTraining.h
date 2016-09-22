@@ -27,6 +27,7 @@ public:
 
     // should return a global name and help text for the mode:
     virtual QString name();
+    virtual QString rawName();
     virtual QString helpText();
     virtual QString icon();
 

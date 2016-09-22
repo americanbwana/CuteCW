@@ -29,6 +29,11 @@ QString PlayMode::name()
     return tr("Type Morse Code");
 }
 
+QString PlayMode::rawName()
+{
+    return "Type Morse Code";
+}
+
 QString PlayMode::icon()
 {
     return ":/icons/64x64/type.png";

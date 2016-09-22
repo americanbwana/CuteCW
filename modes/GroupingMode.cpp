@@ -106,6 +106,11 @@ QString GroupingMode::name()
     return tr("Grouping Training");
 }
 
+QString GroupingMode::rawName()
+{
+    return "Grouping Training";
+}
+
 QString GroupingMode::helpText()
 {
     return tr("Characters in the chosen training sequence will be keyed starting with a single character.  "
@@ -127,7 +132,7 @@ QString GroupingMode::icon()
 
 void GroupingMode::loadSettings(QSettings &settings)
 {
-    QString prefix = name();
+    QString prefix = rawName();
     m_groupLength = settings.value(prefix + "/groupLength", 1).toInt();
     m_goodGuesses = settings.value(prefix + "/goodGuesses", 1).toInt();
     m_badGuesses  = settings.value(prefix + "/badGuesses", 1).toInt();
@@ -135,7 +140,7 @@ void GroupingMode::loadSettings(QSettings &settings)
 
 void GroupingMode::saveSettings(QSettings &settings)
 {
-    QString prefix = name();
+    QString prefix = rawName();
     settings.setValue(prefix + "/groupLength", m_groupLength);
     settings.setValue(prefix + "/goodGuesses", m_goodGuesses);
     settings.setValue(prefix + "/badGuesses",  m_badGuesses);

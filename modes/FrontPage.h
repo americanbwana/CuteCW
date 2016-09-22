@@ -13,6 +13,7 @@ public:
 
     QString helpText();
     QString name();
+    QString rawName();
 };
 
 #endif // FRONTPAGE_H

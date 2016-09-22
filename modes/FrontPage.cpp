@@ -101,3 +101,9 @@ QString FrontPage::name()
 {
     return MorseMode::tr("Home Page");
 }
+
+QString FrontPage::rawName()
+{
+    return "Home Page";
+}
+

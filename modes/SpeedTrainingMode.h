@@ -19,6 +19,7 @@ public:
     virtual void handleKeyPress(QChar letterPressed);
 
     virtual QString name();
+    virtual QString rawName();
     virtual QString helpText();
     virtual QString icon();
 

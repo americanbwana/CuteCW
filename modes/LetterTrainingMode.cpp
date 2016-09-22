@@ -54,6 +54,11 @@ QString LetterTrainingMode::name()
     return tr("Recognition Training");
 }
 
+QString LetterTrainingMode::rawName()
+{
+    return "Recognition Training";
+}
+
 QString LetterTrainingMode::icon()
 {
     return ":/icons/64x64/recognition.png";

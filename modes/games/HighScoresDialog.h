@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QTextEdit>
 #include <QLineEdit>
+#include <QDir>
 
 #include <QtCore/QList>
 #include <QtCore/QPair>

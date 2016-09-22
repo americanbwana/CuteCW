@@ -97,6 +97,11 @@ QString GroupGame::name()
     return tr("Grouping game");
 }
 
+QString GroupGame::rawName()
+{
+    return "Grouping game";
+}
+
 QString GroupGame::icon()
 {
     return ":/icons/64x64/game.png";

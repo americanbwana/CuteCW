@@ -24,6 +24,11 @@ QString KeyTraining::name()
     return tr("Straight Key Training");
 }
 
+QString KeyTraining::rawName()
+{
+    return "Straight Key Training";
+}
+
 QString KeyTraining::helpText()
 {
     return tr("this is for practing keying.");
