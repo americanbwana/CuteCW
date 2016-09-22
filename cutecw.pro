@@ -103,6 +103,9 @@ OTHER_FILES += \
     debian/rules \
     cutecw.desktop
 
+TRANSLATIONS = cutecw_en.ts \
+               cutecw_fr.ts
+
 BINDIR = $$PREFIX/bin
 DATADIR =$$PREFIX/share
 

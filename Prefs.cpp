@@ -6,6 +6,7 @@
 #include <QSpinBox>
 #include <QVBoxLayout>
 #include <QDialogButtonBox>
+#include <QMessageBox>
 
 Prefs::Prefs(Morse *morse, QWidget *parent) :
     QDialog(parent, Qt::Window), m_morse(morse), m_oldTone(-1)
@@ -37,6 +38,15 @@ Prefs::Prefs(Morse *morse, QWidget *parent) :
         m_StartSound->setCheckState(Qt::Unchecked);
     genericForm->addRow(tr("Play startup sound"), m_StartSound);
 
+    m_Lang = new QComboBox();
+    m_Lang->addItem("English", QVariant("en"));
+    m_Lang->addItem("Français", QVariant("fr"));
+
+    int langIndex = m_Lang->findData(QVariant(m_morse->lang()));
+    m_Lang->setCurrentIndex(langIndex);
+
+    genericForm->addRow(tr("App language"), m_Lang);
+
     tabWidget->addTab(genericPrefs, tr("General"));
 
     topLayout->addWidget(tabWidget);
@@ -55,7 +65,7 @@ Prefs::Prefs(Morse *morse, QWidget *parent) :
         if ((modeLayout = mode->getPrefsLayout()) != 0) {
             QWidget *modeWidget = new QWidget();
             modeWidget->setLayout(modeLayout);
-            tabWidget->addTab(modeWidget, mode->name());
+            tabWidget->addTab(modeWidget, tr(qPrintable(mode->name())));
         }
     }
 
@@ -71,6 +81,12 @@ void Prefs::ok()
     m_morse->setTone(m_tone->value());
     m_morse->setWPMGoal(m_WPMRate->value());
     m_morse->setStartSound(m_StartSound->isChecked());
+
+    QString newLang = m_Lang->itemData(m_Lang->currentIndex()).toString();
+    if (m_morse->lang() != newLang)
+        QMessageBox::information(this, tr("Language change"), tr("Please restart CuteCW to apply language change."));
+
+    m_morse->setLang(newLang);
     m_morse->saveSettings();
     m_morse->loadSettings();
 

@@ -77,6 +77,7 @@ MorseMode *Morse::getMode(TrainingMode which) const {
 
 void Morse::prefsButton() {
     Prefs prefs(this);
+    prefs.setWindowTitle(tr("CuteCW preferences"));
     prefs.exec();
 }
 
@@ -105,6 +106,7 @@ void Morse::saveSettings() {
     settings.setValue("WPM/Accept", m_currentWPMAccept);
     settings.setValue("Tone", m_tone);
     settings.setValue("StartSound", m_startSound);
+    settings.setValue("Lang", m_lang);
     //settings.setValue("LetterWeighting", int(m_badLetterWeighting));
 
     for(int i = PLAY; i <= maximumTrainingMode; i++) {
@@ -119,6 +121,7 @@ void Morse::loadSettings() {
     //m_badLetterWeighting = (BadLetterWeighting) settings.value("LetterWeighting", HIGH).toInt();
     m_tone = settings.value("Tone", DEFAULT_TONE).toInt();
     m_startSound = settings.value("StartSound", true).toBool();
+    m_lang = settings.value("Lang", "en").toString();
     for(int i = PLAY; i <= maximumTrainingMode; i++) {
         if (! m_modes.contains((TrainingMode) i))
             continue;
@@ -607,6 +610,10 @@ bool Morse::startSound() {
     return m_startSound;
 }
 
+QString Morse::lang() {
+    return m_lang;
+}
+
 void Morse::setWPMGoal(int wpmGoal)
 {
     m_currentWPMGoal = wpmGoal;
@@ -624,6 +631,10 @@ void Morse::setTone(int tone)
 
 void Morse::setStartSound(bool state) {
     m_startSound = state;
+}
+
+void Morse::setLang(QString lang) {
+    m_lang = lang;
 }
 
 float Morse::dahSecsF()

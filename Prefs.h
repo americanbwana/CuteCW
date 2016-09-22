@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QSpinBox>
 #include <QCheckBox>
+#include <QComboBox>
 
 namespace Ui {
     class Prefs;
@@ -29,6 +30,7 @@ private:
     QSpinBox *m_tone;
 
     QCheckBox *m_StartSound;
+    QComboBox *m_Lang;
 
     int m_oldTone;
     int m_oldRate;
