@@ -1,9 +1,15 @@
-* Next Version: 1.0
-*** DONE Added the ability to read news from various news sources
-    :LOGBOOK:
-    - State "DONE"       from ""           [2011-03-12 Sat 08:04]
-    :END:
+* Version: 1.1
+*** DONE Merged Qt5 branch
+*** DONE Added startup sound on/off option
+*** DONE Added option to change start sound string
+*** DONE Fixed audio crash on OSX when ->stop() on device output
+*** DONE Added translation stuff and translation to french
+*** DONE Added language FR/EN selector in options
+*** DONE Original repository audio issue #12 merged
+*** DONE Compilation-time option to make a portable build (it will use config from runtime dir)
 * Version: 1.0
+*** DONE fix random sources on windows
+*** DONE Added the ability to read news from various news sources
 *** DONE fixed the sound issues on the mac and hopefully maemo
 *** DONE added "similar" sequences: auv4, ndb6, eish5, ...
 *** DONE fix read-to-me memory issues
@@ -71,6 +77,4 @@
 *** DONE make the home screen use QGroupBoxes
 *** DONE help should be scrollable and also stacked on maemo
 *** DONE color code letters in sequence graph according to current
-* Version: 1.0
-*** DONE fix random sources on windows
 

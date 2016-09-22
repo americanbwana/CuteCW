@@ -1,5 +1,5 @@
 * The TODO list
-*** TODO online documentation and theory
+*** TODO documentation and theory
 *** TODO [#B] make some default texts to pick from (gutenberg?)
 ***** Maybe partial selections (parts 1-20 of ...)
 ***** Possible Text Choices:
@@ -7,10 +7,10 @@
 *** TODO [#B] read a generic rss feeds
 *** TODO make a "score" counter for recognition: sum(avewpm)
 *** TODO Use two letter-tall lines to show history of keyed/guessed letters
-*** TODO fix maemo bug: clear training doesn't appear
-*** TODO Issue #3: Make the DESTDIR variable supported for make install
 * Longer Term
+*** TODO fix maemo bug: clear training doesn't appear
 *** TODO More Fun Games!
+**** TODO Invader seems broken
 ***** TODO Keying practice using on or two keys for practicing keying.
 ******* TODO space-invaders/falling-letters keying
 

@@ -15,7 +15,8 @@
     </message>
     <message>
         <location filename="AboutDialog.ui" line="47"/>
-        <source>Version: 1.0</source>
+        <source>Version: 1.1</source>
+        <oldsource>Version: 1.0</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -311,32 +312,32 @@ y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="539"/>
+        <location filename="Morse.cpp" line="542"/>
         <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="546"/>
+        <location filename="Morse.cpp" line="549"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="550"/>
+        <location filename="Morse.cpp" line="553"/>
         <source>Sequence</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="553"/>
+        <location filename="Morse.cpp" line="556"/>
         <source>Change Words</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="571"/>
+        <location filename="Morse.cpp" line="574"/>
         <source>Training</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="593"/>
+        <location filename="Morse.cpp" line="596"/>
         <source>Games</source>
         <translation type="unfinished"></translation>
     </message>
@@ -495,22 +496,27 @@ y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Prefs.cpp" line="48"/>
+        <location filename="Prefs.cpp" line="47"/>
         <source>App language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Prefs.cpp" line="50"/>
+        <location filename="Prefs.cpp" line="51"/>
+        <source>Startup sound string</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Prefs.cpp" line="54"/>
         <source>General</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Prefs.cpp" line="87"/>
+        <location filename="Prefs.cpp" line="91"/>
         <source>Language change</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Prefs.cpp" line="87"/>
+        <location filename="Prefs.cpp" line="91"/>
         <source>Please restart CuteCW to apply language change.</source>
         <translation type="unfinished"></translation>
     </message>

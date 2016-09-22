@@ -9,6 +9,8 @@ QT       += core gui multimedia network xml widgets
 TARGET = cutecw
 TEMPLATE = app
 
+VERSION = 1.1
+
 # Activate this line if you want a portable build
 # This will makes the software to use a config in the
 # current "runtime" folder instead of system-wide one

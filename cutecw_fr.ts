@@ -15,8 +15,9 @@
     </message>
     <message>
         <location filename="AboutDialog.ui" line="47"/>
-        <source>Version: 1.0</source>
-        <translation></translation>
+        <source>Version: 1.1</source>
+        <oldsource>Version: 1.0</oldsource>
+        <translation>Version: 1.1</translation>
     </message>
     <message>
         <location filename="AboutDialog.ui" line="104"/>
@@ -349,32 +350,32 @@ n</translation>
         <translation>Préférences de CuteCW</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="539"/>
+        <location filename="Morse.cpp" line="542"/>
         <source>Home</source>
         <translation>Accueil</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="546"/>
+        <location filename="Morse.cpp" line="549"/>
         <source>Play</source>
         <translation>Jouer</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="550"/>
+        <location filename="Morse.cpp" line="553"/>
         <source>Sequence</source>
         <translation>Séquence</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="553"/>
+        <location filename="Morse.cpp" line="556"/>
         <source>Change Words</source>
         <translation>Change les mots</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="571"/>
+        <location filename="Morse.cpp" line="574"/>
         <source>Training</source>
         <translation>Entrainement</translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="593"/>
+        <location filename="Morse.cpp" line="596"/>
         <source>Games</source>
         <translation>Jeux</translation>
     </message>
@@ -534,22 +535,27 @@ n</translation>
         <translation>Français</translation>
     </message>
     <message>
-        <location filename="Prefs.cpp" line="48"/>
+        <location filename="Prefs.cpp" line="47"/>
         <source>App language</source>
         <translation>Langue de l&apos;application</translation>
     </message>
     <message>
-        <location filename="Prefs.cpp" line="50"/>
+        <location filename="Prefs.cpp" line="51"/>
+        <source>Startup sound string</source>
+        <translation>Texte morse de démarrage</translation>
+    </message>
+    <message>
+        <location filename="Prefs.cpp" line="54"/>
         <source>General</source>
         <translation>Général</translation>
     </message>
     <message>
-        <location filename="Prefs.cpp" line="87"/>
+        <location filename="Prefs.cpp" line="91"/>
         <source>Language change</source>
         <translation>Changement de langue</translation>
     </message>
     <message>
-        <location filename="Prefs.cpp" line="87"/>
+        <location filename="Prefs.cpp" line="91"/>
         <source>Please restart CuteCW to apply language change.</source>
         <translation>Veuillez redémarrer CuteCW pour appliquer le changement de langue.</translation>
     </message>
