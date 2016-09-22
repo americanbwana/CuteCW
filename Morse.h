@@ -11,6 +11,7 @@
 #include <QTextCursor>
 #include <QIcon>
 #include <QtCore/QSignalMapper>
+#include <QDir>
 
 #include "Generator.h"
 #include "MorseStat.h"

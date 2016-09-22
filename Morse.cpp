@@ -101,7 +101,14 @@ Morse::menuBar()
 void Morse::saveSettings() {
     qDebug() << "saving!";
 
-    QSettings settings("WS6Z", "qtcw");
+#ifdef PORTABLE_BUILD
+    QSettings settings(QDir::currentPath() + "/cutecw.cfg", QSettings::IniFormat);
+    qDebug() << "Using portable config from" << QDir::currentPath() << "/cutecw.cfg";
+#else
+    QSettings settings("WS6Z", "cutecw");
+    qDebug() << "Using native config";
+#endif
+
     settings.setValue("WPM/Goal", m_currentWPMGoal);
     settings.setValue("WPM/Accept", m_currentWPMAccept);
     settings.setValue("Tone", m_tone);
@@ -115,7 +122,14 @@ void Morse::saveSettings() {
 }
 
 void Morse::loadSettings() {
-    QSettings settings("WS6Z", "qtcw");
+#ifdef PORTABLE_BUILD
+    QSettings settings(QDir::currentPath() + "/cutecw.cfg", QSettings::IniFormat);
+    qDebug() << "Using portable config from" << QDir::currentPath() << "/cutecw.cfg";
+#else
+    QSettings settings("WS6Z", "cutecw");
+    qDebug() << "Using native config";
+#endif
+
     m_currentWPMGoal = settings.value("WPM/Goal", WPMGOAL).toInt();
     m_currentWPMAccept = settings.value("WPM/Accept", WPMACCEPT).toInt();
     //m_badLetterWeighting = (BadLetterWeighting) settings.value("LetterWeighting", HIGH).toInt();

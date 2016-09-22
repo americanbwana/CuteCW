@@ -2,6 +2,8 @@
 #include <QTranslator>
 #include <QLibraryInfo>
 #include <QSettings>
+#include <QDebug>
+#include <QDir>
 
 #include "MainWindow.h"
 
@@ -9,7 +11,13 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    QSettings settings("WS6Z", "qtcw");
+#ifdef PORTABLE_BUILD
+    QSettings settings(QDir::currentPath() + "/cutecw.cfg", QSettings::IniFormat);
+    qDebug() << "Using portable config from" << QDir::currentPath() << "/cutecw.cfg";
+#else
+    QSettings settings("WS6Z", "cutecw");
+    qDebug() << "Using native config";
+#endif
 
     QString locale = settings.value("Lang", "en").toString();
 
