@@ -11,10 +11,14 @@ KeyTimingDisplay::KeyTimingDisplay(QWidget *parent) :
 
 void KeyTimingDisplay::paintEvent(QPaintEvent *event)
 {
+    (void)event;
     QPainter painter(this);
     painter.save();
 
-    int minx = 100, miny = 0, maxx = width() - 10, maxy = height();
+    int minx = 100;
+    //int miny = 0;
+    int maxx = width() - 10;
+    //int maxy = height();
     int widgetWidth = maxx - minx, widgetHeight = height();
     int lineHeight = 15, spacingHeight = widgetHeight - lineHeight * 4;
 
@@ -32,7 +36,7 @@ void KeyTimingDisplay::paintEvent(QPaintEvent *event)
         QList<int>::const_iterator requiredEnd = m_requiredTimings.end();
 
         QList<int>::const_iterator keyedSpot = m_keyedTimings.begin();
-        QList<int>::const_iterator keyedEnd = m_keyedTimings.end();
+        //QList<int>::const_iterator keyedEnd = m_keyedTimings.end();
 
         while(requiredSpot != requiredEnd) {
             QList<int>::const_iterator startingSpot = requiredSpot;

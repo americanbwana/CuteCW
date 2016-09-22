@@ -164,15 +164,15 @@ QTime SpeedTrainingMode::startNextTrainingKey() {
     // we have all the letters available to pick from at random
 
     // Calculate our magic constant:
-    int numLetters = letters.count();
-    int magicHelper;
+//    int numLetters = letters.count();
     float currentAccept = m_morse->currentWPMAccept();
 
-    if (numLetters > 2) {
-        //magicHelper = int(((50.0 + float(numLetters) * float(maxPercent))*0.5 - 50.0)/((float(numLetters) + 1.0)*0.5 - 1.0));
-        magicHelper = int(((currentAccept/2.0 + float(numLetters) * currentAccept)*0.5 - currentAccept/2.0)/((float(numLetters) + 1.0)*0.5 - 1.0));
-    } else
-        magicHelper = currentAccept*2;
+//    int magicHelper;
+//    if (numLetters > 2) {
+//        //magicHelper = int(((50.0 + float(numLetters) * float(maxPercent))*0.5 - 50.0)/((float(numLetters) + 1.0)*0.5 - 1.0));
+//        magicHelper = int(((currentAccept/2.0 + float(numLetters) * currentAccept)*0.5 - currentAccept/2.0)/((float(numLetters) + 1.0)*0.5 - 1.0));
+//    } else
+//        magicHelper = currentAccept*2;
 
     float totalWPM = 0;
     QList<QPair<QChar, float> >::iterator aletter;

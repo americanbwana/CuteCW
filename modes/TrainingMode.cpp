@@ -234,6 +234,7 @@ void TrainingMode::handleKeyPress(QChar letterPressed) {
     // set the last WPM record on the display
     QString WPM = QString().setNum(msToPauseWPM(msElapsed)) + " ";
     foreach(QChar thechar, m_lastKeys) {
+        (void)thechar;
         WPM = WPM + "-";
     }
     qDebug() << "WPM text: " << WPM;
@@ -262,6 +263,7 @@ void TrainingMode::setWPMLabel(float wpm) {
     // set the last WPM record on the display
     QString WPM = "Speed Rating: " + QString().setNum(wpm, 'g', 2) + " ";
     foreach(QChar thechar, m_lastKeys) {
+        (void)thechar;
         WPM = WPM + "-";
     }
     m_ui->WPM->setText(WPM);
