@@ -95,9 +95,12 @@ public:
     int currentWPMGoal();
     int currentWPMAccept();
     int tone();
+    bool startSound();
+
     void setWPMGoal(int wpmGoal);
     void setWPMAccept(int wpmAccept);
     void setTone(int tone);
+    void setStartSound(bool state);
 
     AudioMode audioMode();
     void setAudioMode(AudioMode newmode);
@@ -158,6 +161,7 @@ private:
     BadLetterWeighting               m_badLetterWeighting;
     QTimer                           m_timer;
     int                              m_tone;
+    bool                             m_startSound;
     QTime                            m_leadInPause;
 
     QSignalMapper                   *m_signalMapper;

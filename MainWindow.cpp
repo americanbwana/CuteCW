@@ -82,11 +82,12 @@ MainWindow::~MainWindow()
 void
 MainWindow::startIt()
 {
-
     m_morse->clearList();
-    m_morse->add("de ws6z");
 
-    m_morse->playSequence();
+    if (m_morse->startSound()) {
+        m_morse->add("de ws6z");
+        m_morse->playSequence();
+    }
 }
 
 QAudioOutput *

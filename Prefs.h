@@ -3,6 +3,7 @@
 #include "Morse.h"
 #include <QDialog>
 #include <QSpinBox>
+#include <QCheckBox>
 
 namespace Ui {
     class Prefs;
@@ -26,6 +27,8 @@ private:
 
     QSpinBox *m_WPMRate;
     QSpinBox *m_tone;
+
+    QCheckBox *m_StartSound;
 
     int m_oldTone;
     int m_oldRate;

@@ -104,6 +104,7 @@ void Morse::saveSettings() {
     settings.setValue("WPM/Goal", m_currentWPMGoal);
     settings.setValue("WPM/Accept", m_currentWPMAccept);
     settings.setValue("Tone", m_tone);
+    settings.setValue("StartSound", m_startSound);
     //settings.setValue("LetterWeighting", int(m_badLetterWeighting));
 
     for(int i = PLAY; i <= maximumTrainingMode; i++) {
@@ -117,6 +118,7 @@ void Morse::loadSettings() {
     m_currentWPMAccept = settings.value("WPM/Accept", WPMACCEPT).toInt();
     //m_badLetterWeighting = (BadLetterWeighting) settings.value("LetterWeighting", HIGH).toInt();
     m_tone = settings.value("Tone", DEFAULT_TONE).toInt();
+    m_startSound = settings.value("StartSound", true).toBool();
     for(int i = PLAY; i <= maximumTrainingMode; i++) {
         if (! m_modes.contains((TrainingMode) i))
             continue;
@@ -601,6 +603,10 @@ int Morse::tone()
     return m_tone;
 }
 
+bool Morse::startSound() {
+    return m_startSound;
+}
+
 void Morse::setWPMGoal(int wpmGoal)
 {
     m_currentWPMGoal = wpmGoal;
@@ -614,6 +620,10 @@ void Morse::setWPMAccept(int wpmAccept)
 void Morse::setTone(int tone)
 {
     m_tone = tone;
+}
+
+void Morse::setStartSound(bool state) {
+    m_startSound = state;
 }
 
 float Morse::dahSecsF()

@@ -30,6 +30,13 @@ Prefs::Prefs(Morse *morse, QWidget *parent) :
     genericForm->addRow("", button);
     connect(button, SIGNAL(clicked()), this, SLOT(testTone()));
 
+    m_StartSound = new QCheckBox();
+    if (m_morse->startSound())
+        m_StartSound->setCheckState(Qt::Checked);
+    else
+        m_StartSound->setCheckState(Qt::Unchecked);
+    genericForm->addRow(tr("Play startup sound"), m_StartSound);
+
     tabWidget->addTab(genericPrefs, tr("General"));
 
     topLayout->addWidget(tabWidget);
@@ -63,6 +70,7 @@ void Prefs::ok()
 {
     m_morse->setTone(m_tone->value());
     m_morse->setWPMGoal(m_WPMRate->value());
+    m_morse->setStartSound(m_StartSound->isChecked());
     m_morse->saveSettings();
     m_morse->loadSettings();
 
