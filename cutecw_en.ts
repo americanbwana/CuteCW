@@ -250,6 +250,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="modes/LetterTrainingMode.cpp" line="24"/>
+        <source>A
+c
+c
+u
+r
+a
+c
+y</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="modes/LetterTrainingMode.cpp" line="43"/>
         <source>&lt;p&gt;In this mode characters will be played for you. You will need to press the appropriate within a half-a-second.  Accuracy is more important than speed.In order to continue advancing in the character set you will need to achieve at least a 90% accuracy rate on the letters, with at least 5 guesses for eachletter under your belt.Characters that you need the most help with will be sent more frequently than the characters you&apos;re good at.&lt;/p&gt;&lt;p&gt;The important lesson is to learn to recognize and automatically type the letter you hear, without stressing out about the next letter. Be &lt;b&gt;sure&lt;/b&gt; to aim for accuracy not speed in this mode.&lt;/p&gt;&lt;p&gt;After you succeed in learning the characters, continue on to the speed training mode next where you&apos;ll be judged on both accuracy and speed.</source>
         <translation type="unfinished"></translation>

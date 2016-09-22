@@ -21,7 +21,7 @@ void LetterTrainingMode::switchToMode() {
     m_ui->helpBar->setText(tr("<font color=\"green\">Type the letter you hear as accurately as possible within a half a second.</font>"));
 
     setupSequences();
-    setupWidgets(m_trainingSequence, true, "A\nc\nc\nu\nr\na\nc\ny");
+    setupWidgets(m_trainingSequence, true, tr("A\nc\nc\nu\nr\na\nc\ny"));
     updateGraphs();
 }
 
