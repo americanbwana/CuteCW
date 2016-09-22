@@ -85,7 +85,7 @@ MainWindow::startIt()
     m_morse->clearList();
 
     if (m_morse->startSound()) {
-        m_morse->add("de ws6z");
+        m_morse->add(m_morse->startSoundStr());
         m_morse->playSequence();
     }
 }

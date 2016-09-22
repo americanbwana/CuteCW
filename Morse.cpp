@@ -114,6 +114,7 @@ void Morse::saveSettings() {
     settings.setValue("Tone", m_tone);
     settings.setValue("StartSound", m_startSound);
     settings.setValue("Lang", m_lang);
+    settings.setValue("StartSoundStr", m_startSoundStr);
     //settings.setValue("LetterWeighting", int(m_badLetterWeighting));
 
     for(int i = PLAY; i <= maximumTrainingMode; i++) {
@@ -136,6 +137,8 @@ void Morse::loadSettings() {
     m_tone = settings.value("Tone", DEFAULT_TONE).toInt();
     m_startSound = settings.value("StartSound", true).toBool();
     m_lang = settings.value("Lang", "en").toString();
+    m_startSoundStr = settings.value("StartSoundStr", "de WS6Z").toString();
+
     for(int i = PLAY; i <= maximumTrainingMode; i++) {
         if (! m_modes.contains((TrainingMode) i))
             continue;
@@ -638,6 +641,10 @@ QString Morse::lang() {
     return m_lang;
 }
 
+QString Morse::startSoundStr() {
+    return m_startSoundStr;
+}
+
 void Morse::setWPMGoal(int wpmGoal)
 {
     m_currentWPMGoal = wpmGoal;
@@ -659,6 +666,10 @@ void Morse::setStartSound(bool state) {
 
 void Morse::setLang(QString lang) {
     m_lang = lang;
+}
+
+void Morse::setStartSoundStr(QString str) {
+    m_startSoundStr = str;
 }
 
 float Morse::dahSecsF()

@@ -5,6 +5,7 @@
 #include <QSpinBox>
 #include <QCheckBox>
 #include <QComboBox>
+#include <QLineEdit>
 
 namespace Ui {
     class Prefs;
@@ -31,6 +32,8 @@ private:
 
     QCheckBox *m_StartSound;
     QComboBox *m_Lang;
+
+    QLineEdit *m_StartSoundStr;
 
     int m_oldTone;
     int m_oldRate;

@@ -98,12 +98,14 @@ public:
     int tone();
     bool startSound();
     QString lang();
+    QString startSoundStr();
 
     void setWPMGoal(int wpmGoal);
     void setWPMAccept(int wpmAccept);
     void setTone(int tone);
     void setStartSound(bool state);
     void setLang(QString lang);
+    void setStartSoundStr(QString str);
 
     AudioMode audioMode();
     void setAudioMode(AudioMode newmode);
@@ -166,6 +168,7 @@ private:
     int                              m_tone;
     bool                             m_startSound;
     QString                          m_lang;
+    QString                          m_startSoundStr;
     QTime                            m_leadInPause;
 
     QSignalMapper                   *m_signalMapper;

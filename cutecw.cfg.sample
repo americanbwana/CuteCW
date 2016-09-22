@@ -1,6 +1,7 @@
 [General]
 Lang=fr
 StartSound=true
+StartSoundStr=de WS6Z
 Tone=700
 
 [Grouping%20Training]

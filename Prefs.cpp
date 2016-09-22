@@ -44,8 +44,12 @@ Prefs::Prefs(Morse *morse, QWidget *parent) :
 
     int langIndex = m_Lang->findData(QVariant(m_morse->lang()));
     m_Lang->setCurrentIndex(langIndex);
-
     genericForm->addRow(tr("App language"), m_Lang);
+
+    m_StartSoundStr = new QLineEdit();
+    m_StartSoundStr->setText(m_morse->startSoundStr());
+    genericForm->addRow(tr("Startup sound string"), m_StartSoundStr);
+
 
     tabWidget->addTab(genericPrefs, tr("General"));
 
@@ -87,6 +91,7 @@ void Prefs::ok()
         QMessageBox::information(this, tr("Language change"), tr("Please restart CuteCW to apply language change."));
 
     m_morse->setLang(newLang);
+    m_morse->setStartSoundStr(m_StartSoundStr->text());
     m_morse->saveSettings();
     m_morse->loadSettings();
 
