@@ -1,4 +1,5 @@
 * The TODO list
+*** TODO OSX app bundle path search for translations
 *** TODO documentation and theory
 *** TODO [#B] make some default texts to pick from (gutenberg?)
 ***** Maybe partial selections (parts 1-20 of ...)
@@ -33,7 +34,7 @@
       seems that fixing the output ending bug fixed this issue
 * END
   moves DONE entries to CHANGES.org via c-c c-x c-s
-#+ARCHIVE: CHANGES.org::* Next Version: 1.1
+#+ARCHIVE: CHANGES.org::* Next Version: 1.2
 #+STARTUP: nologdone nologrefile
 
 Local Variables:
