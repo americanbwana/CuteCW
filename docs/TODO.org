@@ -1,6 +1,8 @@
 * The TODO list
 *** TODO OSX app bundle path search for translations
 *** CHECK Bug with rolling head on keyboard : it count successfull keys even if not ...
+*** TODO Read for me bug with ponctuation
+*** TODO Read for me stop doesn't stop playing
 
 *** TODO documentation and theory
 *** TODO [#B] make some default texts to pick from (gutenberg?)
