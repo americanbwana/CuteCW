@@ -1,3 +1,9 @@
+cutecw (1.1-1.1) unstable; urgency=medium
+
+  * Various debug upgrades and translations
+
+ -- dashie <dashie@rainbowdash>  Fri, 23 Sep 2016 13:33:25 +0200
+
 cutecw (1.1-1) unstable; urgency=medium
 
   * Upgraded to upstream 1.1 

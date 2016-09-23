@@ -688,7 +688,7 @@ n</translation>
     <message>
         <location filename="modes/SpeedTrainingMode.cpp" line="292"/>
         <source>(higher forces a slower starting speed)</source>
-        <translation>(Elevé provoque une vitesse de départ plus faible)</translation>
+        <translation>(Une valeur élevée provoque une vitesse de départ plus faible)</translation>
     </message>
 </context>
 <context>

@@ -69,7 +69,7 @@ Prefs::Prefs(Morse *morse, QWidget *parent) :
         if ((modeLayout = mode->getPrefsLayout()) != 0) {
             QWidget *modeWidget = new QWidget();
             modeWidget->setLayout(modeLayout);
-            tabWidget->addTab(modeWidget, tr(qPrintable(mode->name())));
+            tabWidget->addTab(modeWidget, trUtf8(qUtf8Printable(mode->name())));
         }
     }
 
