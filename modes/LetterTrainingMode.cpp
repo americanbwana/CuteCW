@@ -78,6 +78,7 @@ void LetterTrainingMode::startNextTrainingKey() {
     m_lastKeys.clear();
     m_lastTimes.clear();
 
+    /* possible fix for multiple-keys here too */
     //if (m_morse->audioMode() == Morse::PLAYING)
     //    return;
 
