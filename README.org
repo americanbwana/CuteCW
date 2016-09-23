@@ -42,11 +42,10 @@ Cute CW: train yourself
 * Deployment
 ** Windows
   In Qt Creator, Project part :
-    Execute -> Deployment
-    Add custom step:
-    Command: windeployqt.exe
-    Args: --release --dir %{buildDir}\CuteCW_1.1_portable_win32 cutecw.exe
-    Working dir: %{buildDir}\release
+    - Execute -> Deployment; Add custom step:
+    - Command: windeployqt.exe
+    - Args: --release --dir %{buildDir}\CuteCW_1.1_portable_win32 cutecw.exe
+    - Working dir: %{buildDir}\release
 
   Build with or without the PORTABLE BUILD in cutecw.pro
   Then RUN the app from Qt Creator (it will call the deploy step)
