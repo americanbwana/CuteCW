@@ -11,6 +11,7 @@
 *** DONE Translations updates (FR)
 *** DONE Debian packaging updated
 *** DONE First quick-fix for multiple-keys entered and roll-head-on-keyboard bug
+*** DONE Read for me: stop button was not stopping audio
 * Version: 1.0
 *** DONE fix random sources on windows
 *** DONE Added the ability to read news from various news sources

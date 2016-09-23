@@ -169,6 +169,9 @@ void ReadMode::readWordUnderCursor() {
 
 void ReadMode::audioStopped()
 {
+    if (runningMode() == PAUSED)
+        return;
+
     // decide if we're going to re-read the current word or not.
     if (m_currentWordCount >= m_readWordCount) {
         m_currentWordCount = 1;
