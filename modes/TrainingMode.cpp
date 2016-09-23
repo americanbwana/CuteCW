@@ -189,6 +189,7 @@ void TrainingMode::handleKeyPress(QChar letterPressed) {
     qDebug() << "m_lastTimes" << m_lastTimes;
 
     // when double pressing some key, we get m_lastTimes with: (QTime("00:00:00.000"))
+    // because we are in playing mode and not stopped nor paused
     // resulting in: lastTime QTime("00:00:00.000") now QTime("18:28:14.535")
     // and         : Training response: elapsed  66494536 ms ( 0  WPM)
 
