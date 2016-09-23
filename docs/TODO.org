@@ -2,6 +2,11 @@
 *** TODO OSX app bundle path search for translations
 *** CHECK Bug with rolling head on keyboard : it count successfull keys even if not ...
 *** TODO Read for me bug with ponctuation
+**** Qt "Word" doesn't seems to deal correctly with non-words (symbols)
+**** Maybe we can rewrote the switching by using a manual check and select
+**** start select - select while [is a morse] or stop
+**** stop mean play the word, stop playing then unselect
+**** loop while != not morse, morse ? start select (while morse) then play etc .
 
 *** TODO documentation and theory
 *** TODO [#B] make some default texts to pick from (gutenberg?)
