@@ -7,6 +7,32 @@
 
 #include "MainWindow.h"
 
+QString findTranslations() {
+    QStringList searchDirs;
+
+#if defined(Q_OS_X11) || defined(Q_OS_LINUX)
+    searchDirs.append("/usr/share/cutecw/");
+#elif defined(Q_OS_WIN)
+    searchDirs.append(QCoreApplication::applicationDirPath());
+#endif
+
+    // TODO: Mac OSX Bundle search
+
+    // fallback, insert CWD
+    searchDirs.append(QDir::currentPath());
+
+    foreach(const QString &fn, searchDirs) {
+        QDir fic(fn);
+        if (fic.exists("cutecw_en.qm") && fic.isReadable()) {
+            qInfo() << "found translations in" << fn;
+            return fn;
+        }
+    }
+    // fallback returns CWD
+    qCritical() << "unable to found translations in paths, fallback to current CWD even if not fond in it";
+    return QDir::currentPath();
+}
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -31,7 +57,8 @@ int main(int argc, char *argv[])
 
     // CuteCW strings
     QTranslator cutecwTranslator;
-    cutecwTranslator.load("cutecw_" + locale);
+    QString translationsDir = findTranslations();
+    cutecwTranslator.load("cutecw_" + locale, translationsDir);
     a.installTranslator(&cutecwTranslator);
 
     MainWindow w;
