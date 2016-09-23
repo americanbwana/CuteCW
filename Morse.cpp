@@ -306,7 +306,7 @@ QTime Morse::playIt(QChar c, bool addLeadInPause) {
      * run a little longer.
      */
     add(m_letterPause);
-    add(m_letterPause);
+    //add(m_letterPause);
 
     return maybePlaySequence(true);
 }
