@@ -186,9 +186,20 @@ void TrainingMode::handleKeyPress(QChar letterPressed) {
         return;
     }
 
+    qDebug() << "m_lastTimes" << m_lastTimes;
+
+    // when double pressing some key, we get m_lastTimes with: (QTime("00:00:00.000"))
+    // resulting in: lastTime QTime("00:00:00.000") now QTime("18:28:14.535")
+    // and         : Training response: elapsed  66494536 ms ( 0  WPM)
+
     // pull off the last key from the "keyed" output
     QChar lastKey = m_lastKeys.takeFirst();
     QTime lastTime = m_lastTimes.takeFirst();
+
+    if (lastTime == QTime(0,0,0)) {
+        qDebug() << "Got QTime(0,0,0); TOO EARLY; next.";
+        //return;
+    }
 
     // calculate the time since the keying ended to the time the user hit a key
     // XXX: we need to store a list of times, not just a single time
@@ -196,6 +207,7 @@ void TrainingMode::handleKeyPress(QChar letterPressed) {
     int msElapsed = lastTime.msecsTo(now) - m_morse->ditSecsF(); // subtract off blank-after time
     if (msElapsed <= 0)
         msElapsed = 1;
+    qDebug() << "lastTime" << lastTime << "now" << now;
     qDebug() << "Training response: elapsed " << msElapsed << "ms (" << msToPauseWPM(msElapsed) << " WPM)";
     MorseStat *pressedStat = getStat(letterPressed);
 
