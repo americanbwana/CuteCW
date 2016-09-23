@@ -24,6 +24,9 @@ else
 	CFLAGS += -O2
 endif
 
+configure:
+	cd builddir && qmake cutecw.pro
+
 build: build-stamp
 
 build-stamp: builddir/Makefile
@@ -31,6 +34,7 @@ build-stamp: builddir/Makefile
 
 	# Add here commands to compile the package.
 	cd builddir && $(MAKE)
+	lrelease cutecw.pro
 	#docbook-to-man debian/cutecw.sgml > cutecw.1
 
 	touch $@
@@ -55,6 +59,8 @@ install: build
 
 	# Add here commands to install the package into debian/cutecw.
 	cd builddir && $(MAKE) INSTALL_ROOT=$(CURDIR)/debian/$(APPNAME) install
+	mkdir -p $(CURDIR)/debian/$(APPNAME)/usr/share/cutecw/
+	cp cutecw_*.qm $(CURDIR)/debian/$(APPNAME)/usr/share/cutecw/
 	rm -rf $(CURDIR)/debian/cutecw-dbg
 
 build-indep: build install
