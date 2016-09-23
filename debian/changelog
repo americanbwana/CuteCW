@@ -1,3 +1,9 @@
+cutecw (1.1-1) unstable; urgency=medium
+
+  * Upgraded to upstream 1.1 
+
+ -- dashie <dashie@sigpipe.me>  Fri, 23 Sep 2016 02:06:39 +0200
+
 cutecw (1.0-2) unstable; urgency=low
  
   * Fix preferences dialog sizing
