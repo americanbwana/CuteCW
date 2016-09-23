@@ -10,7 +10,7 @@
 *** DONE Improved qDebug() with custom message pattern with file, function, time, criticity
 *** DONE Translations updates (FR)
 *** DONE Debian packaging updated
-*** DONE First quick-fix for multiple-keys entered
+*** DONE First quick-fix for multiple-keys entered and roll-head-on-keyboard bug
 * Version: 1.0
 *** DONE fix random sources on windows
 *** DONE Added the ability to read news from various news sources

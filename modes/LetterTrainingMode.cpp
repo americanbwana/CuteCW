@@ -78,9 +78,9 @@ void LetterTrainingMode::startNextTrainingKey() {
     m_lastKeys.clear();
     m_lastTimes.clear();
 
-    /* possible fix for multiple-keys here too */
-    //if (m_morse->audioMode() == Morse::PLAYING)
-    //    return;
+    /* possible fix for multiple-keys */
+    if (m_morse->audioMode() == Morse::PLAYING)
+        return;
 
     QString::iterator letter;
     QString::iterator lastLetter = m_trainingSequence.end();

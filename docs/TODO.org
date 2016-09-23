@@ -1,6 +1,6 @@
 * The TODO list
 *** TODO OSX app bundle path search for translations
-*** TODO Bug with rolling head on keyboard : it count successfull keys even if not ...
+*** CHECK Bug with rolling head on keyboard : it count successfull keys even if not ...
 
 *** TODO documentation and theory
 *** TODO [#B] make some default texts to pick from (gutenberg?)

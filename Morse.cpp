@@ -188,7 +188,8 @@ QTime Morse::maybePlaySequence(bool addPause) {
 
     qDebug() << "playing mode" << m_playingMode << "returning QTime(0,0,0) [enum AudioMode { STOPPED, PLAYING, PAUSED };]";
     /* Try to fix the multiple-keys-entered bug by setting audio to any mode other than playing */
-    setAudioMode(PAUSED);
+    // LetterTrainingMode.cpp L82 fix used instead
+    //setAudioMode(PAUSED);
     return QTime(0,0,0);
 }
 

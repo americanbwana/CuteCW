@@ -198,7 +198,7 @@ void TrainingMode::handleKeyPress(QChar letterPressed) {
 
     if (lastTime == QTime(0,0,0)) {
         qDebug() << "Got QTime(0,0,0); TOO EARLY; next.";
-        //return;
+        // LetterTrainingMode.cpp L82 fix used instead for the multiple-keys pressed bug
     }
 
     // calculate the time since the keying ended to the time the user hit a key
