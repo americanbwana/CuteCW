@@ -37,7 +37,7 @@
     <message>
         <location filename="AboutDialog.ui" line="152"/>
         <source>http://www.hamtools.org/cutecw/</source>
-        <translation></translation>
+        <translation>https://dev.sigpipe.me/DashieHam/CuteCW</translation>
     </message>
 </context>
 <context>
@@ -45,7 +45,7 @@
     <message>
         <source>&lt;font color=&quot;green&quot;&gt;Select a starting place from the buttons below&lt;/font&gt;</source>
         <oldsource>&lt;font color=&quot;green&quot;&gt;Selecting a starting place from the buttons below&lt;/font&gt;</oldsource>
-        <translation>&lt;font color=&quot;green&quot;&gt;Selectionnez quelquechose pour démarrer via les boutons ci-dessous&lt;/font&gt;</translation>
+        <translation>&lt;font color=&quot;green&quot;&gt;Selectionne quelquechose pour démarrer via les boutons ci-dessous&lt;/font&gt;</translation>
     </message>
     <message>
         <source>test</source>
@@ -62,7 +62,7 @@
     <message>
         <source>&lt;p&gt;From this screen you can access all the other modes. This is just a starting screen.&lt;p&gt;If you want to learn morse code, consider following the steps in the left hand panel.Then, to continue your training and/or have some fun in the process, try the modes in the right hand panel.&lt;p&gt;Once you enter a mode, use the menus to navigate to other modes.&lt;/p&gt;</source>
         <oldsource>&lt;p&gt;From this screen you can access all the other modes.  This is just a starting screen.  &lt;p&gt;If you want to learn morse code, consider following the steps in the left hand panel.  Then, to continue your training and/or have some fun in the process, try the modes in the right hand panel.&lt;p&gt;once you enter a mode, use the menus to navegate to other modes.&lt;/p&gt;</oldsource>
-        <translation>&lt;p&gt;Depuis cet écran vous pouvez accéder à tous les autres modes.  Ceci est juste un écran de démarrage.&lt;p&gt;Si vous voulez apprendre plus de code morse, considérez de suivre les étapes a gauche de l&apos;écran.Puis, pour continuer votre entrainement et/ou avoir plus d&apos;amusement, essayez les modes a droite de l&apos;écran.&lt;p&gt;Une fois que vous entrez dans un mode, utilisez les menus pour naviguer dans les autres modes.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Depuis cet écran tu peux accéder à tous les autres modes.  Ceci est juste un écran de démarrage.&lt;p&gt;Si tu veux apprendre plus de code morse, considére de suivre les étapes a gauche de l&apos;écran.Puis, pour continuer ton entrainement et/ou avoir plus d&apos;amusement, essaye les modes a droite de l&apos;écran.&lt;p&gt;Une fois que tu entres dans un mode, utilise les menus pour naviguer dans les autres modes.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Home Page</source>
@@ -104,7 +104,7 @@
     <message>
         <location filename="modes/games/GroupGame.cpp" line="89"/>
         <source>&lt;p&gt;Characters in the chosen training sequence will be keyed starting at the length and speed you request.  If you correctly type each letter in the sequence then the WPM rate will go up by one, and the sequence length will slowly go up as well.  Guess incorrectly, and the rate will drop as well the sequence length.&lt;p&gt;Scoring is based on the following equation: &lt;i&gt;WPM * numberRight * 10 * (2 if all characters are right, 1 if not)&lt;/i&gt;</source>
-        <translation>&lt;p&gt;Les caractères dans la séquence d&apos;entrainement choisie seront joués en démarrant a la longueur et vitesse que vous choisissez.  Si vous tapez correctement chaque lettres dans la séquence alors la vitesse de MotsParMinutes augmentera de un, et la longueur de la séquence va lentement augmenter aussi.  Devinez mal, et la vitesse réduira ainsi que la longueur de la séquence.&lt;p&gt;Le score est basé sur l&apos;équation suivante : &lt;i&gt;MPM * nombre juste * 10 * (2 si tous les caractères sont justes, sinon 1)&lt;/i&gt;</translation>
+        <translation>&lt;p&gt;Les caractères dans la séquence d&apos;entrainement choisie seront joués en démarrant a la longueur et vitesse que tu choisis.  Si tu tapes correctement chaque lettres dans la séquence alors la vitesse de MotsParMinutes augmentera de un, et la longueur de la séquence va lentement augmenter aussi.  Devine mal, et la vitesse réduira ainsi que la longueur de la séquence.&lt;p&gt;Le score est basé sur l&apos;équation suivante : &lt;i&gt;MPM * nombre juste * 10 * (2 si tous les caractères sont justes, sinon 1)&lt;/i&gt;</translation>
     </message>
     <message>
         <location filename="modes/games/GroupGame.cpp" line="97"/>
@@ -163,12 +163,12 @@
     <message>
         <location filename="modes/games/HighScoresDialog.cpp" line="37"/>
         <source>Your Name: </source>
-        <translation>Votre nom :</translation>
+        <translation>Ton  nom :</translation>
     </message>
     <message>
         <location filename="modes/games/HighScoresDialog.cpp" line="47"/>
         <source>Your Score: </source>
-        <translation>Votre score :</translation>
+        <translation>Ton score :</translation>
     </message>
     <message>
         <location filename="modes/games/HighScoresDialog.cpp" line="61"/>
@@ -182,7 +182,7 @@
         <location filename="modes/games/KeyInvaders.cpp" line="88"/>
         <source>&lt;font color=&quot;green&quot;&gt;Key the letters using a st.&lt;/font&gt;</source>
         <translatorcomment>using a st ????? clavier je suppose ???</translatorcomment>
-        <translation>&lt;font color=&quot;green&quot;&gt;Jouez les lettres en utilisant le clavier.&lt;/font&gt;</translation>
+        <translation>&lt;font color=&quot;green&quot;&gt;Joue les lettres en utilisant le clavier.&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="modes/games/KeyInvaders.cpp" line="95"/>
@@ -192,7 +192,8 @@
     <message>
         <location filename="modes/games/KeyInvaders.cpp" line="113"/>
         <source>Fear The Invaders</source>
-        <translation>Aillez peur de l&apos;invader</translation>
+        <translatorcomment>à affiner</translatorcomment>
+        <translation>Craint l&apos;invader</translation>
     </message>
     <message>
         <location filename="modes/games/KeyInvaders.cpp" line="149"/>
@@ -233,7 +234,7 @@
     <message>
         <location filename="modes/KeyTraining.cpp" line="50"/>
         <source>&lt;font color=&quot;green&quot;&gt;Key the letters using any keyborad key as a straight key.&lt;/font&gt;</source>
-        <translation>&lt;font color=&quot;green&quot;&gt;Tapez les lettres en utilisant n&apos;importe quelle touche du clavier comme manipulateur.&lt;/font&gt;</translation>
+        <translation>&lt;font color=&quot;green&quot;&gt;Tape les lettres en utilisant n&apos;importe quelle touche du clavier comme manipulateur.&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="modes/KeyTraining.cpp" line="60"/>
@@ -278,7 +279,7 @@
     <message>
         <location filename="modes/LetterTrainingMode.cpp" line="21"/>
         <source>&lt;font color=&quot;green&quot;&gt;Type the letter you hear as accurately as possible within a half a second.&lt;/font&gt;</source>
-        <translation>&lt;font color=&quot;green&quot;&gt;Tapez la lettre que vous entendez, aussi précisement que possible, en moins d&apos;une demi-seconde.&lt;/font&gt;</translation>
+        <translation>&lt;font color=&quot;green&quot;&gt;Tape la lettre que tu entends, aussi précisement que possible, en moins d&apos;une demi-seconde.&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="modes/LetterTrainingMode.cpp" line="24"/>
@@ -308,7 +309,7 @@ n</translation>
     <message>
         <location filename="modes/LetterTrainingMode.cpp" line="54"/>
         <source>Recognition Training</source>
-        <translation>Entrainement a la reconnaissance</translation>
+        <translation>Entrainement à la reconnaissance</translation>
     </message>
     <message>
         <location filename="modes/LetterTrainingMode.cpp" line="107"/>
@@ -460,7 +461,7 @@ n</translation>
     <message>
         <location filename="modes/FrontPage.cpp" line="24"/>
         <source>&lt;font color=&quot;green&quot;&gt;Select a starting place from the buttons below&lt;/font&gt;</source>
-        <translation>&lt;font color=&quot;green&quot;&gt;Selectionnez quelquechose pour démarrer via les boutons ci-dessous&lt;/font&gt;</translation>
+        <translation>&lt;font color=&quot;green&quot;&gt;Selectionne quelquechose pour démarrer via les boutons ci-dessous&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="modes/FrontPage.cpp" line="42"/>
@@ -475,7 +476,7 @@ n</translation>
     <message>
         <location filename="modes/FrontPage.cpp" line="94"/>
         <source>&lt;p&gt;From this screen you can access all the other modes. This is just a starting screen.&lt;p&gt;If you want to learn morse code, consider following the steps in the left hand panel.Then, to continue your training and/or have some fun in the process, try the modes in the right hand panel.&lt;p&gt;Once you enter a mode, use the menus to navigate to other modes.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Depuis cet écran vous pouvez accéder à tous les autres modes.  Ceci est juste un écran de démarrage.&lt;p&gt;Si vous voulez apprendre plus de code morse, considérez de suivre les étapes a gauche de l&apos;écran.Puis, pour continuer votre entrainement et/ou avoir plus d&apos;amusement, essayez les modes a droite de l&apos;écran.&lt;p&gt;Une fois que vous entrez dans un mode, utilisez les menus pour naviguer dans les autres modes.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Depuis cet écran tu peux accéder à tous les autres modes.  Ceci est juste un écran de démarrage.&lt;p&gt;Si tu veux apprendre plus de code morse, considére de suivre les étapes a gauche de l&apos;écran.Puis, pour continuer ton entrainement et/ou avoir plus d&apos;amusement, essaye les modes a droite de l&apos;écran.&lt;p&gt;Une fois que tu entre dans un mode, utilise les menus pour naviguer dans les autres modes.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="modes/FrontPage.cpp" line="102"/>
@@ -488,17 +489,17 @@ n</translation>
     <message>
         <location filename="modes/PlayMode.cpp" line="15"/>
         <source>&lt;font color=&quot;green&quot;&gt;Type letters to hear the keys in morse code&lt;/font&gt;</source>
-        <translation>&lt;font color=&quot;green&quot;&gt;Tapez les lettres pour les entendre comme code morse&lt;/font&gt;</translation>
+        <translation>&lt;font color=&quot;green&quot;&gt;Tape les lettres pour les entendre comme code morse&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="modes/PlayMode.cpp" line="22"/>
         <source>&lt;p&gt;In &lt;/i&gt;Type Morse Code&lt;/i&gt; mode, simply type keys and the Cute CW engine will play what you type at the speeds set in the preferences dialog box.  This is a fun mode to simply hear code that you type, but to begin your true training, switch to one of the other modes.&lt;p&gt;You may also wish to try the &lt;i&gt;read to me&lt;/i&gt; mode as well.</source>
-        <translation>&lt;p&gt;Dans le mode &lt;i&gt;Taper du code Morse&lt;/i&gt;, simplement taper les touches et le moteur de CuteCW jouera ce que vous tapez a la vitesse choisie dans les préférences.  Ceci est un mode sympa pour simplement entendre le code que vous tapez, mais pour commencer votre réel entrainement, changez pour un des autres modes.&lt;p&gt;Vous pouvez aussi choisir d&apos;essayer le mode &lt;i&gt;lire pour moi&lt;/i&gt; aussi.</translation>
+        <translation>&lt;p&gt;Dans le mode &lt;i&gt;Tape du code Morse&lt;/i&gt;, simplement tape les touches et le moteur de CuteCW jouera ce que tu tapes a la vitesse choisie dans les préférences.  Ceci est un mode sympa pour simplement entendre le code que tu tapes, mais pour commencer votre réel entrainement, change pour un des autres modes.&lt;p&gt;Tu peux aussi choisir d&apos;essayer le mode &lt;i&gt;lire pour moi&lt;/i&gt; aussi.</translation>
     </message>
     <message>
         <location filename="modes/PlayMode.cpp" line="29"/>
         <source>Type Morse Code</source>
-        <translation>Tapez du code Morse</translation>
+        <translation>Tape du code Morse</translation>
     </message>
 </context>
 <context>
@@ -557,7 +558,7 @@ n</translation>
     <message>
         <location filename="Prefs.cpp" line="91"/>
         <source>Please restart CuteCW to apply language change.</source>
-        <translation>Veuillez redémarrer CuteCW pour appliquer le changement de langue.</translation>
+        <translation>redémarre CuteCW pour appliquer le changement de langue.</translation>
     </message>
 </context>
 <context>
@@ -583,7 +584,8 @@ n</translation>
     <message>
         <location filename="modes/ReadMode.cpp" line="21"/>
         <source>&lt;font color=&quot;green&quot;&gt;Enter text and hit the play button to hear the entire sequence.&lt;/font&gt;</source>
-        <translation>&lt;font color=&quot;green&quot;&gt;Entrez le texte et appuyez sur le bouton jouer pour entendre la séquence entière.&lt;/font&gt;</translation>
+        <translatorcomment>à vérifier</translatorcomment>
+        <translation>&lt;font color=&quot;green&quot;&gt;Entre le texte et appuies sur le bouton jouer pour entendre la séquence entière.&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="modes/ReadMode.cpp" line="37"/>
@@ -628,7 +630,7 @@ n</translation>
     <message>
         <location filename="modes/ReadMode.cpp" line="193"/>
         <source>Learning by hearing a stream of text can be difficult at first.  Start with simple books like children would start with, like &apos;Cat in the Hat&apos;, and only after mastering listening to those simple books with short words should you move to difficult texts like Shakespere or technical documents.&lt;p&gt;To listen to text more slowly, try to leave the WPM rate set to your goal (we suggest 20) and vary only the Letter and Word spacing.  The word spacing affects the pauses between the words, and the letter spacing affects the pauses between the letters.  Start by decreasing both if you need to, but try and get back to full speed letter spacing first and then word spacing. &lt;p&gt;&lt;b&gt;BUG WARNING:&lt;/b&gt; do not load big files...  A bug will end up using way too much memory.</source>
-        <translation>Apprendre par l’écoute d’un texte standard peut être difficile d’un premier abord. Essaie avec un livre simple comme un livre pour enfants Ce n’est qu’après avoir réussi par l’écoute de livres simples avec des mots courts que tu pourras abordes des textes plus difficiles comme de la littérature ou encore des documents techniques.&lt;p&gt;Pour écouter un texte plus lentement, essaie de laisser la vitesse en MPM (mots par minutes) fixée sur le but que tu cherches à atteindre (nous te suggérons 20) et modifie selement l’espacement entre les lettres et les mots. L’espacement entre les mots modifie entre chaque mot et l&apos;’espacement entre les lettres modifie le silence entre chaque lettre.Si tu en as besoin, commence par diminuer les deux valeurs, mais essaie de conserver la vitesse réelle des caractères et diminue plutôt la valeurs entre les mots que la valeur entre les caractères. &lt;p&gt;&lt;b&gt;ATTENTION BUG :&lt;/b&gt; Ne pas charger de gros fichiers, ça utilisera beaucoup trop de mémoire.</translation>
+        <translation>Apprendre par l’écoute d’un texte standard peut être difficile d’un premier abord. Essaie avec un livre simple comme un livre pour enfants Ce n’est qu’après avoir réussi par l’écoute de livres simples avec des mots courts que tu pourras aborder des textes plus difficiles comme de la littérature ou encore des documents techniques.&lt;p&gt;Pour écouter un texte plus lentement, essaie de laisser la vitesse en MPM (mots par minutes) fixée sur le but que tu cherches à atteindre (nous te suggérons 20) et modifie selement l’espacement entre les lettres et les mots. L’espacement entre les mots modifie entre chaque mot et l&apos;’espacement entre les lettres modifie le silence entre chaque lettre.Si tu en as besoin, commence par diminuer les deux valeurs, mais essaie de conserver la vitesse réelle des caractères et diminue plutôt la valeurs entre les mots que la valeur entre les caractères. &lt;p&gt;&lt;b&gt;ATTENTION BUG :&lt;/b&gt; Ne pas charger de gros fichiers, ça utilisera beaucoup trop de mémoire.</translation>
     </message>
     <message>
         <location filename="modes/ReadMode.cpp" line="203"/>
@@ -651,7 +653,7 @@ n</translation>
     <message>
         <location filename="modes/SpeedTrainingMode.cpp" line="86"/>
         <source>Characters in the sequence will play at you with short pauses between each character.  The goal here is to train for both accuracy while under slight pressure as the next letter starts playing at you.  As you guess more and more correctly the speed will increase and incorrect guesses will slow down the keying rate.  As you get better, the spacing between the letters will decrease and will continue to challange you hopefully right near your learning point.</source>
-        <translation>Il y aura une courte pause entre chque caractère. Le but est de de t’entraîner à la fois à bien répondre tout en ayant la pression de la lettre suivante qui va arriver. Plus tu répondras correctement et plus la vitesse augmentera. En revanche, les erreurs réduiront ta progression. En devant meilleur, l’espace entre les lettres diminuera.</translation>
+        <translation>Il y aura une courte pause entre chaque caractère. Le but est de de t’entraîner à la fois à bien répondre tout en ayant la pression de la lettre suivante qui va arriver. Plus tu répondras correctement et plus la vitesse augmentera. En revanche, les erreurs réduiront ta progression. En devant meilleur, l’espace entre les lettres diminuera.</translation>
     </message>
     <message>
         <location filename="modes/SpeedTrainingMode.cpp" line="94"/>
@@ -803,7 +805,7 @@ n</translation>
     <message>
         <location filename="modes/games/WordGame.cpp" line="78"/>
         <source>Random words from the word group will be played to you.  Try to copy or hear them and type them in.  Correctly guessing the words will earn you a higher score and will also increase the WPM rate.</source>
-        <translation>Des mots alléatoires depuis le groupe de mots vous seront joués.  Essayez de les deviner et de les taper.  Deviner correctement les mots vous fera avoir un meilleur score et augmentera aussi la vitesse de MPM.</translation>
+        <translation>Des mots alléatoires depuis le groupe de mots te seront joués.  Essaye de les deviner et de les taper.  Deviner correctement les mots te fera avoir un meilleur score et augmentera aussi la vitesse de MPM.</translation>
     </message>
     <message>
         <location filename="modes/games/WordGame.cpp" line="84"/>
