@@ -15,7 +15,7 @@ QString findTranslations() {
 #endif
 
 #if defined(Q_OS_X11) || defined(Q_OS_LINUX)
-    searchDirs.append(PREFIX"/usr/share/cutecw/");
+    searchDirs.append(PREFIX"/share/cutecw/");
     searchDirs.append("/usr/share/cutecw/");
 #elif defined(Q_OS_WIN)
     searchDirs.append(QCoreApplication::applicationDirPath());
