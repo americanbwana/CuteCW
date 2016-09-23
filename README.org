@@ -39,3 +39,21 @@ Cute CW: train yourself
   3. make
   4. optionally: make install
 
+* Deployment
+** Windows
+  In Qt Creator, Project part :
+    Execute -> Deployment
+    Add custom step:
+    Command: windeployqt.exe
+    Args: --release --dir %{buildDir}\CuteCW_1.1_portable_win32 cutecw.exe
+    Working dir: %{buildDir}\release
+
+  Build with or without the PORTABLE BUILD in cutecw.pro
+  Then RUN the app from Qt Creator (it will call the deploy step)
+  Then copy the following:
+    - books to CuteCW_1.1_portable_win32
+    - words to CuteCW_1.1_portable_win32
+    - cutecw.cfg.sample to CuteCW_1.1_portable_win32\cutecw.cfg
+    - from release dir : cutecw.exe to CuteCW_1.1_portable_win32
+  
+  Done, you have a portable build for Cute CW for windows in CuteCW_1.1_portable_win32
