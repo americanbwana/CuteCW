@@ -29,7 +29,11 @@ QString findTranslations() {
     foreach(const QString &fn, searchDirs) {
         QDir fic(fn);
         if (fic.exists("cutecw_en.qm") && fic.isReadable()) {
+#if QT_VERSION < QT_VERSION_CHECK(5, 5, 1)
+            qDebug() << "found translations in" << fn;
+#else
             qInfo() << "found translations in" << fn;
+#endif
             return fn;
         }
     }
