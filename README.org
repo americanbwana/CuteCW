@@ -16,11 +16,9 @@ Cute CW: train yourself
 
   You can download the source code or pre-built binaries from:
 
-    TODO
-
-  You can also access the git repository, from:
-
-    https://dev.sigpipe.me/DashieHam/CuteCW
+    - Debian / Ubuntu repository packages: https://bits.sigpipe.me/repos/debian/
+    - Windows portable builds: https://bits.sigpipe.me/projects/CuteCW/
+    - Source code: https://dev.sigpipe.me/DashieHam/CuteCW
 
 * Further Information
 
@@ -39,8 +37,10 @@ Cute CW: train yourself
   3. make
   4. optionally: make install
 
-* Deployment
-** Windows
+  You can make a "portable" build (It will, as now, only check for configuration in directory where software is launched) by
+  Un-commenting the line starting with "#DEFINES" with some comment above it in cutecw.pro
+
+** Windows (copying with Qt Creator required libs to directory automatically"
   In Qt Creator, Project part :
     - Execute -> Deployment; Add custom step:
     - Command: windeployqt.exe
@@ -56,3 +56,4 @@ Cute CW: train yourself
     - from release dir : cutecw.exe to CuteCW_1.1_portable_win32
   
   Done, you have a portable build for Cute CW for windows in CuteCW_1.1_portable_win32
+
