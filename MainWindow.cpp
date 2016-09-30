@@ -107,6 +107,9 @@ MainWindow::createAudioOutput()
    if (!info.isFormatSupported(settings)) {
        qWarning() << "Raw audio format not supported by backend, cannot play audio.";
    }
+   qDebug() << "Using: SampleRate 44100, SampleSize 16, Codec audio/pcm, ByteOrder LittleEndian, SampleType SignedInt";
+   qDebug() << "Using audio device" << info.deviceName();
+   qDebug() << "Supported: SampleRate" << info.supportedSampleRates() << "SampleSize" << info.supportedSampleSizes() << "Codec" << info.supportedCodecs() << "ByteOrder" << info.supportedByteOrders() << "SampleType" << info.supportedSampleTypes();
 
    m_audioOutput = new QAudioOutput(settings);
    return m_audioOutput;
