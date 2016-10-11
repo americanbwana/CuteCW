@@ -273,33 +273,33 @@ y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="107"/>
-        <location filename="modes/LetterTrainingMode.cpp" line="146"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="108"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="147"/>
         <source>All percentage: %1, %2: NEW</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="192"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="193"/>
         <source>&lt;font color=&quot;red&quot;&gt;%1&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="194"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="195"/>
         <source>&lt;font color=&quot;black&quot;&gt;%1&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="223"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="224"/>
         <source>Percentage Goal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="227"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="228"/>
         <source>Minimum Correct Number</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/LetterTrainingMode.cpp" line="231"/>
+        <location filename="modes/LetterTrainingMode.cpp" line="232"/>
         <source>Delay to Next Letter (seconds)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -312,32 +312,32 @@ y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="542"/>
+        <location filename="Morse.cpp" line="548"/>
         <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="549"/>
+        <location filename="Morse.cpp" line="555"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="553"/>
+        <location filename="Morse.cpp" line="559"/>
         <source>Sequence</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="556"/>
+        <location filename="Morse.cpp" line="562"/>
         <source>Change Words</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="574"/>
+        <location filename="Morse.cpp" line="580"/>
         <source>Training</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Morse.cpp" line="596"/>
+        <location filename="Morse.cpp" line="602"/>
         <source>Games</source>
         <translation type="unfinished"></translation>
     </message>
@@ -587,17 +587,17 @@ y</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/ReadMode.cpp" line="193"/>
+        <location filename="modes/ReadMode.cpp" line="196"/>
         <source>Learning by hearing a stream of text can be difficult at first.  Start with simple books like children would start with, like &apos;Cat in the Hat&apos;, and only after mastering listening to those simple books with short words should you move to difficult texts like Shakespere or technical documents.&lt;p&gt;To listen to text more slowly, try to leave the WPM rate set to your goal (we suggest 20) and vary only the Letter and Word spacing.  The word spacing affects the pauses between the words, and the letter spacing affects the pauses between the letters.  Start by decreasing both if you need to, but try and get back to full speed letter spacing first and then word spacing. &lt;p&gt;&lt;b&gt;BUG WARNING:&lt;/b&gt; do not load big files...  A bug will end up using way too much memory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/ReadMode.cpp" line="203"/>
+        <location filename="modes/ReadMode.cpp" line="206"/>
         <source>Read to me</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/ReadMode.cpp" line="233"/>
+        <location filename="modes/ReadMode.cpp" line="236"/>
         <source>Read each word this many times:</source>
         <translation type="unfinished"></translation>
     </message>
