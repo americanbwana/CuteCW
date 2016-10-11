@@ -71,7 +71,7 @@ XB-Maemo-Icon-26:
 
 Package: cutecw
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: libqt5multimedia5-plugins, ${shlibs:Depends}, ${misc:Depends}
 Description: Cute CW (Morse Code) Training Application
  CuteCW trains you in Morse Code using a step by step process,
  starting with basic recognition and advancing to full speed
