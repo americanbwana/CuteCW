@@ -34,7 +34,12 @@ build-stamp: builddir/Makefile
 
 	# Add here commands to compile the package.
 	cd builddir && $(MAKE)
-	lrelease cutecw.pro
+	#lrelease cutecw.pro
+	# Doing lrelease cutecw.pro with lrelease 5.3.2 under Debian/Jessie
+	# ARMHF running under Debian/Jessis AMD64 using qemu-arm (via qemu-user-static)
+	# and binfmt makes lrelease segfaults
+	# The workaround using manually each .ts files works so use it
+	lrelease *.ts
 	#docbook-to-man debian/cutecw.sgml > cutecw.1
 
 	touch $@
