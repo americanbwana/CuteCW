@@ -35,7 +35,8 @@ Cute CW: train yourself
   1. edit cutecw.pro to enable portable build if needed (this will set config file to working dir of run app)
   2. qmake
   3. make
-  4. optionally: make install
+  4. lrelease cutecw.pro
+  5. optionally: make install
 
   You can make a "portable" build (It will, as now, only check for configuration in directory where software is launched) by
   Un-commenting the line starting with "#DEFINES" with some comment above it in cutecw.pro
@@ -53,6 +54,8 @@ Cute CW: train yourself
     - books to CuteCW_1.1_portable_win32
     - words to CuteCW_1.1_portable_win32
     - cutecw.cfg.sample to CuteCW_1.1_portable_win32\cutecw.cfg
+    - Running "lrelease cutecw.pro" from Qt SDK to make .qm files
+    - copying *.qm to CuteCW_1.1_portable_win32
     - from release dir : cutecw.exe to CuteCW_1.1_portable_win32
   
   Done, you have a portable build for Cute CW for windows in CuteCW_1.1_portable_win32
