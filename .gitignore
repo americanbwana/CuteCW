@@ -13,3 +13,4 @@ cutecw
 qrc_cutecw.cpp
 ui_AboutDialog.h
 cutecw.cfg
+*.qm
