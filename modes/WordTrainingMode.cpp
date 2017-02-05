@@ -201,7 +201,7 @@ void WordTrainingMode::loadSettings(QSettings &settings)
     } else {
         m_wordsListName = words.firstKey();
     }
-    m_maxWord = words[m_wordsListName]->length();li
+    m_maxWord = words[m_wordsListName]->length();
 }
 
 void WordTrainingMode::saveSettings(QSettings &settings)
