@@ -45,7 +45,7 @@ void WordGame::play()
     if (startInfo.exec() == QDialog::Accepted) {
         m_WPM = WPM.value();
         m_morse->createTones(m_WPM);
-        m_maxWord = (*(words[m_wordsNumber])).count();
+         m_maxWord = (*(words[m_wordsListName])).count();
         enterPressed();
     }
 }
@@ -59,7 +59,7 @@ void WordGame::gameOver()
 void WordGame::groupGuessed(int right, int total)
 {
     nextTurn(10 * m_WPM * right * ((total==right)?2:1));
-    m_maxWord = (*(words[m_wordsNumber])).count();
+    m_maxWord = (*(words[m_wordsListName])).count();
     if (right == total)
         m_WPM++;
     else

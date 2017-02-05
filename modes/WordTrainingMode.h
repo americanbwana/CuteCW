@@ -12,8 +12,6 @@ public:
     Q_OBJECT
 
 public:
-    enum wordNums { N100 = 0, N200 = 1, N300 = 2, N400 = 3, N500 = 4 };
-
     WordTrainingMode(Morse *parent, Ui::MainWindow *ui);
     void setupWords();
     void setupWordsMenu();
@@ -43,13 +41,13 @@ public slots:
 
 protected:
     int                              m_maxWord;
-    QMap<wordNums, QList<QString> *> words;
-    wordNums                         m_wordsNumber;
+    QMap<QString, QStringList *>     words;
+    QString                          m_wordsListName;
 
 private:
     bool                             m_wordWasGood;
     QSignalMapper                   *m_wordSignalMapper;
-    int                              m_wordnumber;
+    int                              m_wordNumber;
     QString                          m_enteredWord;
     int                              m_rightCount;
 };

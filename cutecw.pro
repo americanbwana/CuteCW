@@ -57,11 +57,6 @@ HEADERS  += MainWindow.h \
     Generator.h \
     MorseStat.h \
     Prefs.h \
-    words/100words.h \
-    words/500words.h \
-    words/400words.h \
-    words/300words.h \
-    words/200words.h \
     modes/SpeedTrainingMode.h \
     modes/TrainingMode.h \
     modes/MorseMode.h \
