@@ -121,6 +121,8 @@ bool WordTrainingMode::enterPressed() {
 
 void WordTrainingMode::setSequenceText()
 {
+    qDebug() << "plop";
+    m_sequenceNameLabel->setText(tr("Sequence: %1").arg(m_wordsListName));
     m_sequenceLabel->setText(tr("Words: %1/%2").arg(m_maxWord).arg(words[m_wordsListName]->length()));
 }
 

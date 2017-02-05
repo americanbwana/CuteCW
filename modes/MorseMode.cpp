@@ -384,7 +384,7 @@ void MorseMode::setupSequenceLayout(QVBoxLayout *parentLayout, QWidget *theMainT
 
     m_sequenceLayout = new QHBoxLayout(theMainThing);
     parentLayout->addLayout(m_sequenceLayout);
-    m_sequenceLayout->addWidget(new QLabel(tr("Sequence:")));
+    m_sequenceLayout->addWidget(m_sequenceNameLabel = new QLabel(tr("Sequence:")));
     m_sequenceLayout->addWidget(m_sequenceLabel = new QLabel(tr("")));
 }
 

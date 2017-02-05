@@ -149,6 +149,7 @@ protected:
 
     QLabel                         *m_avewpmLabel;
     QLabel                         *m_lastwpmLabel;
+    QLabel                         *m_sequenceNameLabel;
     QLabel                         *m_sequenceLabel;
 };
 
