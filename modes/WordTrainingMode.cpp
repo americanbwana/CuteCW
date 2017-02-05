@@ -20,7 +20,7 @@ void WordTrainingMode::setupWords() {
 #ifdef PORTABLE_BUILD
     searchDirs.append(QDir::currentPath() + "/words/wordtraining")
 #else
-    QStringList standardPaths = QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
+    QStringList standardPaths = QStandardPaths::standardLocations(QStandardPaths::DataLocation);
     foreach(const QString &dn, standardPaths) {
         searchDirs.append(dn + "/words/wordtraining");
     }
@@ -103,6 +103,7 @@ void WordTrainingMode::switchToMode() {
 
 void WordTrainingMode::switchWords(QString sequence) {
     m_wordsListName = sequence;
+    m_maxWord = words[m_wordsListName]->length();
     setSequenceText();
     qDebug() << "switching to: " << m_wordsListName;
 }
@@ -156,8 +157,8 @@ void WordTrainingMode::handleKeyPress(QChar letter) {
                 m_maxWord += 2;
             else
                 m_maxWord += 1;
-            if (m_maxWord > (*(words[m_wordsListName])).count())
-                m_maxWord = (*(words[m_wordsListName])).count();
+            if (m_maxWord > (words[m_wordsListName]->length()))
+                m_maxWord = (words[m_wordsListName]->length());
 
         } else {
             m_ui->letter->setText(tr("%1 - <font color=\"red\">FAIL (%2)</font>").arg(m_ui->letter->text()).arg((*(words[m_wordsListName]))[m_wordNumber]));
@@ -200,13 +201,11 @@ void WordTrainingMode::loadSettings(QSettings &settings)
     } else {
         m_wordsListName = words.firstKey();
     }
-
-    m_maxWord       =          settings.value(prefix + "/maxWord",      2).toInt();
+    m_maxWord = words[m_wordsListName]->length();
 }
 
 void WordTrainingMode::saveSettings(QSettings &settings)
 {
     QString prefix = rawName();
     settings.setValue(prefix + "/wordsListName", m_wordsListName);
-    settings.setValue(prefix + "/maxWord",     m_maxWord);
 }
