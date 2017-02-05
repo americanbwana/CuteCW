@@ -18,7 +18,7 @@ void WordTrainingMode::setupWords() {
 
     // Build the search list, either PORTABLE or not and adding "/words/wordtraining" to it's end.
 #ifdef PORTABLE_BUILD
-    searchDirs.append(QDir::currentPath() + "/words/wordtraining")
+    searchDirs.append(QDir::currentPath() + "/words/wordtraining");
 #else
     QStringList standardPaths = QStandardPaths::standardLocations(QStandardPaths::DataLocation);
     foreach(const QString &dn, standardPaths) {
@@ -201,7 +201,7 @@ void WordTrainingMode::loadSettings(QSettings &settings)
     } else {
         m_wordsListName = words.firstKey();
     }
-    m_maxWord = words[m_wordsListName]->length();
+    m_maxWord = words[m_wordsListName]->length();li
 }
 
 void WordTrainingMode::saveSettings(QSettings &settings)
