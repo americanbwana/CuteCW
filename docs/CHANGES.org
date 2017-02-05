@@ -1,3 +1,5 @@
+* Version: 1.2
+*** DONE Switched Word Training to dynamic file loading
 * Version: 1.1
 *** DONE Merged Qt5 branch
 *** DONE Added startup sound on/off option

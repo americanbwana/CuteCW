@@ -15,8 +15,8 @@
     </message>
     <message>
         <location filename="AboutDialog.ui" line="47"/>
-        <source>Version: 1.1</source>
-        <oldsource>Version: 1.0</oldsource>
+        <source>Version: 1.2</source>
+        <oldsource>Version: 1.1</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -775,57 +775,37 @@ y</source>
 <context>
     <name>WordTrainingMode</name>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="29"/>
-        <source>Words 1-100</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="modes/WordTrainingMode.cpp" line="33"/>
-        <source>Words 101-200</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="modes/WordTrainingMode.cpp" line="37"/>
-        <source>Words 201-300</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="modes/WordTrainingMode.cpp" line="41"/>
-        <source>Words 301-400</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="modes/WordTrainingMode.cpp" line="45"/>
-        <source>Words 401-500</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="modes/WordTrainingMode.cpp" line="57"/>
+        <location filename="modes/WordTrainingMode.cpp" line="96"/>
         <source>&lt;font color=&quot;green&quot;&gt;Enter the word you hear and hit enter.&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="88"/>
+        <location filename="modes/WordTrainingMode.cpp" line="130"/>
+        <source>Sequence: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="modes/WordTrainingMode.cpp" line="131"/>
         <source>Words: %1/%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="112"/>
+        <location filename="modes/WordTrainingMode.cpp" line="155"/>
         <source>%1 - &lt;font color=&quot;green&quot;&gt;GOOD&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="121"/>
+        <location filename="modes/WordTrainingMode.cpp" line="164"/>
         <source>%1 - &lt;font color=&quot;red&quot;&gt;FAIL (%2)&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="132"/>
+        <location filename="modes/WordTrainingMode.cpp" line="175"/>
         <source>Most words that you read or hear are from a very small set of words.  For example, 33% of the most common words fall into 100 simple words.  If you memorize these words so you can regonize them not as individual letters but as entire words you&apos;ll greatly increase your listening rate.  &lt;p&gt;As you hear words, type them in and hit enter when done.  After hitting enter the next word will be played.  As you begin the number of words selected from will be small but will increase quickly for every right answer (and decrease for every wrong).&lt;p&gt;Once you get good at the words in this group, try switching to the &lt;i&gt;Word Game&lt;/i&gt; mode and see what score you can achieve!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="140"/>
+        <location filename="modes/WordTrainingMode.cpp" line="183"/>
         <source>Word Training</source>
         <translation type="unfinished"></translation>
     </message>

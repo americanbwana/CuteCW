@@ -15,9 +15,9 @@
     </message>
     <message>
         <location filename="AboutDialog.ui" line="47"/>
-        <source>Version: 1.1</source>
-        <oldsource>Version: 1.0</oldsource>
-        <translation>Version: 1.1</translation>
+        <source>Version: 1.2</source>
+        <oldsource>Version: 1.1</oldsource>
+        <translation>Version: 1.2</translation>
     </message>
     <message>
         <location filename="AboutDialog.ui" line="104"/>
@@ -816,57 +816,57 @@ n</translation>
 <context>
     <name>WordTrainingMode</name>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="29"/>
         <source>Words 1-100</source>
-        <translation>Mots 1-100</translation>
+        <translation type="vanished">Mots 1-100</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="33"/>
         <source>Words 101-200</source>
-        <translation>Mots 101-200</translation>
+        <translation type="vanished">Mots 101-200</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="37"/>
         <source>Words 201-300</source>
-        <translation>Mots 201-300</translation>
+        <translation type="vanished">Mots 201-300</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="41"/>
         <source>Words 301-400</source>
-        <translation>Mots 301-400</translation>
+        <translation type="vanished">Mots 301-400</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="45"/>
         <source>Words 401-500</source>
-        <translation>Mots 401-500</translation>
+        <translation type="vanished">Mots 401-500</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="57"/>
+        <location filename="modes/WordTrainingMode.cpp" line="96"/>
         <source>&lt;font color=&quot;green&quot;&gt;Enter the word you hear and hit enter.&lt;/font&gt;</source>
         <translation>&lt;font color=&quot;green&quot;&gt;Saisis le mot que tu entends et presse Entrée.&lt;/font&gt;</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="88"/>
+        <location filename="modes/WordTrainingMode.cpp" line="130"/>
+        <source>Sequence: %1</source>
+        <translation>Sequence: %1</translation>
+    </message>
+    <message>
+        <location filename="modes/WordTrainingMode.cpp" line="131"/>
         <source>Words: %1/%2</source>
         <translation>Mots : %1/%2</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="112"/>
+        <location filename="modes/WordTrainingMode.cpp" line="155"/>
         <source>%1 - &lt;font color=&quot;green&quot;&gt;GOOD&lt;/font&gt;</source>
         <translation>%1 - &lt;font color=&quot;green&quot;&gt;CORRECT !&lt;/font&gt;</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="121"/>
+        <location filename="modes/WordTrainingMode.cpp" line="164"/>
         <source>%1 - &lt;font color=&quot;red&quot;&gt;FAIL (%2)&lt;/font&gt;</source>
         <translation>%1 - &lt;font color=&quot;red&quot;&gt;INCORRECT (%2)&lt;/font&gt;</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="132"/>
+        <location filename="modes/WordTrainingMode.cpp" line="175"/>
         <source>Most words that you read or hear are from a very small set of words.  For example, 33% of the most common words fall into 100 simple words.  If you memorize these words so you can regonize them not as individual letters but as entire words you&apos;ll greatly increase your listening rate.  &lt;p&gt;As you hear words, type them in and hit enter when done.  After hitting enter the next word will be played.  As you begin the number of words selected from will be small but will increase quickly for every right answer (and decrease for every wrong).&lt;p&gt;Once you get good at the words in this group, try switching to the &lt;i&gt;Word Game&lt;/i&gt; mode and see what score you can achieve!</source>
         <translation>La plupart des mots que que tu entendras ici sont issus des 1500 mots les plus utilisés en français.Si tu mémorises ces mots, tu les reconnaîtras non comme des lettres individuelles mais comme un mot entier et augmenteras alors ton taux de réussite.  &lt;p&gt;En entendant ces mots, tape-les au clavier puis appuie sur Entrée.  Après avoir validé un mot, le suivant sera transmis.  En débutant, le nombre de mots sera peu élevé mais augmentera à chaque bonne réponse (et diminuera à chaque mauvaise réponse).&lt;p&gt;Une fois que tu auras un bon niveau pour les mots d’un groupe, essaie de passer dans le &lt;i&gt;Jeu de Mots&lt;/i&gt; et vois quel score tu peux atteindre !</translation>
     </message>
     <message>
-        <location filename="modes/WordTrainingMode.cpp" line="140"/>
+        <location filename="modes/WordTrainingMode.cpp" line="183"/>
         <source>Word Training</source>
         <translation>Entraînement par mots</translation>
     </message>
