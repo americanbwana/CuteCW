@@ -1,4 +1,4 @@
-cutecw (1.2) unstable; urgency=medium
+cutecw (1.2-1) unstable; urgency=medium
 
   * Switch to dpkg-source 3.0 (quilt) format
 
