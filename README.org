@@ -60,3 +60,10 @@ Cute CW: train yourself
   
   Done, you have a portable build for Cute CW for windows in CuteCW_1.1_portable_win32
 
+* Words List format
+ For some Modes (actually: Word Training) the words list is dynamic using "words/mode/*.lst.txt" files, the format is simple :
+  - First line is the short (two, threes words) description
+  - rest of file is one word per line
+  - filename doesn't matters but you can use the same description to sort them easily, also sorting is done by name so you can do 001_xxx.lst.txt 002_yyy.lst.txt etc.
+
+ Word Training loads files from "words/wordtraining".
