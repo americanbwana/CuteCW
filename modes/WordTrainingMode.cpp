@@ -57,12 +57,12 @@ void WordTrainingMode::setupWords() {
             continue;
 
         // Process first line
-        QByteArray name = file.readLine();
+        QByteArray name = file.readLine().trimmed();
         words[name] = new QStringList;
 
         while (!file.atEnd()) {
             QByteArray line = file.readLine();
-            words[name]->append(line);
+            words[name]->append(line.trimmed().toLower());
         }
     }
 
@@ -76,13 +76,16 @@ void WordTrainingMode::setupWordsMenu() {
     QMenu *modeMenu = new QMenu(m_ui->changeWords);
     m_ui->changeWords->setMenu(modeMenu);
 
+    QAction *action;
+
     foreach (QString list, words.keys()) {
-        QAction *action = modeMenu->addAction(list);
+        action = modeMenu->addAction(list);
         connect(action, SIGNAL(triggered()), m_wordSignalMapper, SLOT(map()));
         m_wordSignalMapper->setMapping(action, list);
+        qDebug() << "mapped menu for" << list;
     }
 
-    connect(m_wordSignalMapper, SIGNAL(mapped(int)), this, SLOT(switchWords(int)));
+    connect(m_wordSignalMapper, SIGNAL(mapped(QString)), this, SLOT(switchWords(QString)));
 }
 
 void WordTrainingMode::switchToMode() {
@@ -98,8 +101,9 @@ void WordTrainingMode::switchToMode() {
     setSequenceText();
 }
 
-void WordTrainingMode::switchWords(int sequence) {
-    m_wordsListName = (QString) sequence;
+void WordTrainingMode::switchWords(QString sequence) {
+    m_wordsListName = sequence;
+    setSequenceText();
     qDebug() << "switching to: " << m_wordsListName;
 }
 
@@ -190,13 +194,19 @@ QString WordTrainingMode::icon()
 void WordTrainingMode::loadSettings(QSettings &settings)
 {
     QString prefix = rawName();
-    //m_wordsListName = (QString) settings.value(prefix + "/wordsNumber",  int(N100)).toInt();
-    m_maxWord     =            settings.value(prefix + "/maxWord",      2).toInt();
+    QString settingsWordsListName =          settings.value(prefix + "/wordsListName",  words.firstKey()).toString();
+    if (words.contains(settingsWordsListName)) {
+        m_wordsListName = settingsWordsListName;
+    } else {
+        m_wordsListName = words.firstKey();
+    }
+
+    m_maxWord       =          settings.value(prefix + "/maxWord",      2).toInt();
 }
 
 void WordTrainingMode::saveSettings(QSettings &settings)
 {
     QString prefix = rawName();
-    settings.setValue(prefix + "/wordsNumber", m_wordsListName);
+    settings.setValue(prefix + "/wordsListName", m_wordsListName);
     settings.setValue(prefix + "/maxWord",     m_maxWord);
 }

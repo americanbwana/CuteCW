@@ -35,7 +35,7 @@ signals:
 
 public slots:
     virtual void handleKeyPress(QChar letterPressed);
-    void switchWords(int sequence);
+    void switchWords(QString sequence);
 
     virtual void play();
 
