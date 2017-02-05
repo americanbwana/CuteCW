@@ -66,6 +66,7 @@ install: build
 	cd builddir && $(MAKE) INSTALL_ROOT=$(CURDIR)/debian/$(APPNAME) install
 	mkdir -p $(CURDIR)/debian/$(APPNAME)/usr/share/cutecw/
 	cp cutecw_*.qm $(CURDIR)/debian/$(APPNAME)/usr/share/cutecw/
+	cp -r words $(CURDIR)/debian/$(APPNAME)/usr/share/cutecw/
 	rm -rf $(CURDIR)/debian/cutecw-dbg
 
 build-indep: build install
