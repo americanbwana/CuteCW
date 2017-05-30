@@ -1,1 +1,1 @@
-extend-diff-ignore="^[^/]+README.md"
+extend-diff-ignore="README.md$"
