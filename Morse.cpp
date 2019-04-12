@@ -226,10 +226,6 @@ void Morse::playButton() {
     m_modes[m_gameMode]->playButton();
 }
 
-void Morse::generatorDone() {
-    audioFinished(QAudio::StoppedState); // fixes windows issues
-}
-
 void Morse::setAudioMode(AudioMode newmode) {
     m_playingMode = newmode;
     /* Like in Morse::playSequence we have the MAC OSX bug
@@ -260,17 +256,10 @@ Morse::BadLetterWeighting Morse::badLetterWeighting() {
 }
 
 void
-Morse::audioFinished(QAudio::State newState)
+Morse::audioStateChanged(QAudio::State newState)
 {
-#if (defined(Q_WS_MAEMO_5) || defined(MAEMO_CHANGES))
-    // This triggers a nasty hang on linux with Qt 4.7.1
-    // this also makes popping sounds on windows
-    // it also stops audio from working at all on the mac
-    // but it seems like the right thing to do, and fixes maemo
-    if (state != QAudio::ActiveState)
-        m_audioOutput->stop();
-#endif
-    m_modes[m_gameMode]->audioFinished(newState);
+    if (newState == QAudio::IdleState)
+        m_modes[m_gameMode]->audioFinished();
 }
 
 void Morse::switchMode(int newmode) {
@@ -420,12 +409,9 @@ Morse::_createTones()
     if (!m_playBuffer) {
         m_playBuffer = new Generator(m_pause);
         m_playBuffer->start();
-        // windows Qt fails to generate an audio state change, so we detect
-        // the end of the sound buffer this way instead
-        connect(m_playBuffer, SIGNAL(generatorDone()), this, SLOT(generatorDone()), Qt::QueuedConnection);
     }
 
-    connect(m_audioOutput, SIGNAL(stateChanged(QAudio::State)), this, SLOT(audioFinished(QAudio::State)));
+    connect(m_audioOutput, SIGNAL(stateChanged(QAudio::State)), this, SLOT(audioStateChanged(QAudio::State)));
 }
 
 void

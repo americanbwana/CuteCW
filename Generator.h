@@ -31,9 +31,6 @@ public:
     int  m_zerocount;
     qint64 bytes_left;
 
-signals:
-    void generatorDone();
-
 public slots:
     void restartData();
 
@@ -43,10 +40,6 @@ public slots:
 private:
     int putShort(char *t, unsigned int value);
     int fillData(char *start, int frequency, float seconds);
-
-    bool isGenerating;
 };
-
-
 
 #endif // GENERATOR_H
