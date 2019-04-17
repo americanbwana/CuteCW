@@ -19,6 +19,7 @@ steps:
     - sed -i "s/^#DEFINES/DEFINES/" cutecw.pro
     - qmake cutecw.pro
     - make
+    - lrelease cutecw.pro
     - ./make_release.sh linux 
 
 - name: copy linux release
@@ -52,6 +53,7 @@ steps:
     - sed -i "s/^#DEFINES/DEFINES/" cutecw.pro
     - i686-w64-mingw32.static-qmake-qt5 cutecw.pro
     - make
+    - i686-w64-mingw32.static-lrelease cutecw.pro
     - ./make_release.sh windows
 
 - name: copy windows release
