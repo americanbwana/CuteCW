@@ -45,7 +45,7 @@ steps:
   image: ubuntu:bionic
   commands:
     - apt update
-    - apt install -y apt-transport-https gnupg2 add-apt-repository
+    - apt install -y apt-transport-https gnupg2 software-properties-common
     - add-apt-repository 'deb [arch=amd64] http://mirror.mxe.cc/repos/apt bionic main'
     - apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 86B72ED9
     - apt update
