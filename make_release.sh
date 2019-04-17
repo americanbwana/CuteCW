@@ -40,6 +40,6 @@ sha256sum $RELEASE_DIR/${RELEASE_BIN} >> $RELEASE_DIR/BUILD.txt
 
 zip -r "${RELEASE_DIR}.zip" ${RELEASE_DIR}/
 
-sha256sum "${RELEASE_DIR}.zip" >> "${RELEASE_DIR}.sha256"
+sha256sum "${RELEASE_DIR}.zip" >> "${RELEASE_DIR}.zip.sha256"
 
 echo "Generated ${RELEASE_DIR}.zip"
