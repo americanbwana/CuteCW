@@ -15,7 +15,7 @@ steps:
   image: debian:stable
   commands:
     - apt update
-    - apt install -y qt5-default qt5-qmake libqt5multimedia5 qtmultimedia5-dev build-essential zip
+    - apt install -y qttools5-dev-tools qt5-default qt5-qmake libqt5multimedia5 qtmultimedia5-dev build-essential zip
     - sed -i "s/^#DEFINES/DEFINES/" cutecw.pro
     - qmake cutecw.pro
     - make
@@ -43,6 +43,8 @@ steps:
   pull: default
   image: debian:stable
   commands:
+    - apt update
+    - apt install -y apt-transport-https
     - echo 'deb https://pkg.mxe.cc/repos/apt bionic main' >> /etc/apt/sources.list.d/mxeapt.list
     - apt update
     - apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AAA
