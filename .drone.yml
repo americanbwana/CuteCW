@@ -45,7 +45,7 @@ steps:
   image: debian:stable
   commands:
     - apt update
-    - apt install -y apt-transport-https
+    - apt install -y apt-transport-https gnupg2
     - echo 'deb https://pkg.mxe.cc/repos/apt bionic main' >> /etc/apt/sources.list.d/mxeapt.list
     - apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C6BF758A33A3A
     - apt update
