@@ -110,7 +110,7 @@ public slots:
 
     virtual void help();                 // opens a help window to show helpText() contents
 
-    virtual void audioFinished(QAudio::State state);  // changes the internal state and calls:
+    virtual void audioFinished();                     // changes the internal state and calls:
     virtual void audioStopped();                      // this when audio has stopped playing
 
     virtual void changeWPM(int wpm);                  // call this to change the WPM rate

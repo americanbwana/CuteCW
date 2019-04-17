@@ -83,11 +83,7 @@ void MorseMode::handleKeyRelease(const QString &letterReleased) {
     handleKeyRelease(letterReleased[0]);
 }
 
-void MorseMode::audioFinished(QAudio::State state) {
-    if (state != QAudio::IdleState && state != QAudio::StoppedState)
-        return;
-
-    // qDebug() << "audio state changed: " << state << ", old state = " << m_morse->audioMode();
+void MorseMode::audioFinished() {
 
     if (m_morse->audioMode() != Morse::STOPPED) {
         audioStopped();
