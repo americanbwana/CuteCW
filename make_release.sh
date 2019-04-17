@@ -2,6 +2,8 @@
 
 RELEASETYPE=$1
 
+ls
+
 if [ "x$RELEASETYPE" = "x" ]; then
     echo "Usage: $0 [linux|windows]"
     exit 1
