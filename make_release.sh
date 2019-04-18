@@ -11,7 +11,7 @@ fi
 
 if [ "$RELEASETYPE" = "linux" ]; then
     RELEASE_BIN="cutecw"
-elif [ "$RELEASETYPE" == "windows" ]; then
+elif [ "$RELEASETYPE" = "windows" ]; then
     RELEASE_BIN="cutecw.exe"
 else
     RELEASE_BIN="cutecw"
