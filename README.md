@@ -4,6 +4,10 @@ Cute CW: train yourself
 # Build status
 [![Build Status](https://dronegh.sigpipe.me/api/badges/rhaamo/CuteCW/status.svg)](https://dronegh.sigpipe.me/rhaamo/CuteCW)
 
+# Prebuilt tarball
+
+Get Windows (64bit) and Linux (64bit) prebuilt "portable" archive here: https://bits.sigpipe.me/projects/CuteCW/
+
 # Introduction
 
   I've had thoughts for a long time about how we train ourselves in CW
