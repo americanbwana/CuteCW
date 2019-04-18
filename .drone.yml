@@ -26,7 +26,7 @@ steps:
   image: appleboy/drone-scp
   settings:
     host:
-      - rainbowdash.lxc.licorn.eu
+      - 10.0.0.110
     user: droneci
     key:
       from_secret: ssh_droneci_key
@@ -62,7 +62,7 @@ steps:
   image: appleboy/drone-scp
   settings:
     host:
-      - rainbowdash.lxc.licorn.eu
+      - 10.0.0.110
     user: droneci
     key:
       from_secret: ssh_droneci_key
