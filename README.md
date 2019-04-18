@@ -2,7 +2,7 @@ Cute CW: train yourself
 =======================
 
 # Build status
-Debian build: ![](https://jenkins.sigpipe.me/job/cutecw-debian-build/badge/icon) Debian package AMD64: ![](https://jenkins.sigpipe.me/job/cutecw-binaries/architecture=amd64/badge/icon) Debian package ARMHF: ![](https://jenkins.sigpipe.me/job/cutecw-binaries/architecture=armhf/badge/icon) Windows Portable: ![](https://jenkins.sigpipe.me/job/cutecw-win32-portable/badge/icon)
+[![Build Status](https://dronegh.sigpipe.me/api/badges/rhaamo/CuteCW/status.svg)](https://dronegh.sigpipe.me/rhaamo/CuteCW)
 
 # Introduction
 

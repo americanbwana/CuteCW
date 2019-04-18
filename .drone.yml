@@ -1,0 +1,96 @@
+---
+kind: pipeline
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+clone:
+  depth: 50
+
+steps:
+- name: build-linux
+  pull: default
+  image: debian:stable
+  commands:
+    - apt update
+    - apt install -y qttools5-dev-tools qt5-default qt5-qmake libqt5multimedia5 qtmultimedia5-dev build-essential zip
+    - sed -i "s/^#DEFINES/DEFINES/" cutecw.pro
+    - qmake cutecw.pro
+    - make
+    - lrelease cutecw.pro
+    - ./make_release.sh linux 
+
+- name: copy linux release
+  image: appleboy/drone-scp
+  settings:
+    host:
+      - rainbowdash.lxc.licorn.eu
+    user: droneci
+    key:
+      from_secret: ssh_droneci_key
+    target: /home/sites_web/pub.sigpipe.me/bits/projects/CuteCW/
+    source:
+      - cutecw.linux.*.zip
+      - cutecw.linux.*.zip.sha256
+  when:
+    branch:
+      - master
+    event:
+      - push
+      - tag
+
+- name: build-windows
+  pull: default
+  image: ubuntu:bionic
+  commands:
+    - apt update
+    - apt install -y apt-transport-https gnupg2 software-properties-common
+    - apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C6BF758A33A3A276
+    - add-apt-repository 'deb [arch=amd64] http://mirror.mxe.cc/repos/apt xenial main'
+    - apt update
+    - apt-get --no-install-recommends -qq -y install zip build-essential mxe-x86-64-w64-mingw32.static-gcc mxe-x86-64-w64-mingw32.static-qt5 mxe-x86-64-w64-mingw32.static-qtbase mxe-x86-64-w64-mingw32.static-qtmultimedia mxe-x86-64-w64-mingw32.static-qtsystems mxe-x86-64-w64-mingw32.static-qttools mxe-x86-64-w64-mingw32.static-qttranslations mxe-x86-64-w64-mingw32.static-qtwinextras
+    - sed -i "s/^#DEFINES/DEFINES/" cutecw.pro
+    - export PATH=/usr/lib/mxe/usr/bin:$PATH
+    - /usr/lib/mxe/usr/x86_64-w64-mingw32.static/qt5/bin/qmake cutecw.pro
+    - make
+    - /usr/lib/mxe/usr/x86_64-w64-mingw32.static/qt5/bin/lrelease cutecw.pro
+    - ./make_release.sh windows
+
+- name: copy windows release
+  image: appleboy/drone-scp
+  settings:
+    host:
+      - rainbowdash.lxc.licorn.eu
+    user: droneci
+    key:
+      from_secret: ssh_droneci_key
+    target: /home/sites_web/pub.sigpipe.me/bits/projects/CuteCW/
+    source:
+      - cutecw.windows.*.zip
+      - cutecw.windows.*.zip.sha256
+  when:
+    branch:
+      - master
+    event:
+      - push
+      - tag
+
+- name: notify
+  pull: default
+  image: plugins/slack
+  settings:
+    channel: dev
+  environment:
+    SLACK_WEBHOOK:
+      from_secret: SLACK_WEBHOOK
+  when:
+    event:
+    - push
+    - tag
+    - pull_request
+    status:
+    - changed
+    - failure
+    - success
