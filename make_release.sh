@@ -20,7 +20,13 @@ fi
 RELEASE_DIR="cutecw.${RELEASETYPE}.${DRONE_BUILD_NUMBER}"
 
 mkdir -p $RELEASE_DIR
-cp cutecw $RELEASE_DIR/${RELEASE_BIN}
+
+if [ "$RELEASETYPE" = "linux" ]; then
+    cp cutecw $RELEASE_DIR/
+else
+    cp release/${RELEASE_BIN} $RELEASE_DIR/
+fi
+
 cp -r books $RELEASE_DIR/
 cp -r icons $RELEASE_DIR/
 cp LICENSE $RELEASE_DIR/LICENSE.txt
