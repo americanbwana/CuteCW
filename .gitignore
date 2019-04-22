@@ -14,3 +14,7 @@ qrc_cutecw.cpp
 ui_AboutDialog.h
 cutecw.cfg
 *.qm
+/moc_predefs.h
+/.qmake.stash
+/cutecw.*.sha256
+/cutecw.*.zip
