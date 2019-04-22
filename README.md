@@ -20,16 +20,9 @@ Get Windows (64bit) and Linux (64bit) prebuilt "portable" archive here: https://
   Cute CW was developed by WS6Z.
   Then merged Qt5 branch to master and made a lot of modifications by Dashie.
 
-# Get it!
-
-  You can download the source code or pre-built binaries from:
-  - Debian / Ubuntu repository packages: https://bits.sigpipe.me/repos/debian/
-  - Windows portable builds: https://bits.sigpipe.me/projects/CuteCW/
-  - Source code: https://dev.sigpipe.me/DashieHam/CuteCW
-
 # Further Information
 
-  The growing list of [CHANGES](https://dev.sigpipe.me/DashieHam/CuteCW/src/master/docs/CHANGES.org) and the hopefully shrinking [TODO List](https://dev.sigpipe.me/DashieHam/CuteCW/src/master/docs/TODO.org)
+  The growing list of [CHANGES](https://github.com/rhaamo/CuteCW/blob/master/docs/CHANGES.org) and the hopefully shrinking [TODO List](https://github.com/rhaamo/CuteCW/blob/master/docs/CHANGES.org)
 
 # Compiling It
 
