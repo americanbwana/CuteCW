@@ -117,6 +117,7 @@ DATADIR =$$PREFIX/share
 macx {
     CONFIG += x86 x86_64
     #  CONFIG += x86 ppc x86_64 ppc64
+    QMAKE_CXXFLAGS += -std=c++11
 }
 
 unix:!symbian {
